@@ -1,0 +1,1007 @@
+Packet 0 ACK timeout
+Packet 1 sent successfully, RTT: 1.162904ms
+Packet 2 sent successfully, RTT: 411.19µs
+Packet 3 dropped (simulated)
+Packet 4 ACK timeout
+Packet 5 sent successfully, RTT: 811.972µs
+Packet 6 dropped (simulated)
+Packet 7 ACK timeout
+Packet 8 dropped (simulated)
+Packet 9 sent successfully, RTT: 158.045µs
+Packet 10 sent successfully, RTT: 121.869µs
+Packet 11 ACK timeout
+Packet 12 sent successfully, RTT: 1.061358ms
+Packet 13 sent successfully, RTT: 1.278902ms
+Packet 14 dropped (simulated)
+Packet 15 dropped (simulated)
+Packet 16 sent successfully, RTT: 1.349658ms
+Packet 17 sent successfully, RTT: 1.55474ms
+Packet 18 sent successfully, RTT: 1.963144ms
+Packet 19 sent successfully, RTT: 6.35774ms
+Packet 20 sent successfully, RTT: 1.315946ms
+Packet 21 sent successfully, RTT: 12.035789ms
+Packet 22 sent successfully, RTT: 1.02259ms
+Packet 23 dropped (simulated)
+Packet 24 dropped (simulated)
+Packet 25 dropped (simulated)
+Packet 26 sent successfully, RTT: 283.325µs
+Packet 27 sent successfully, RTT: 2.110678ms
+Packet 28 dropped (simulated)
+Packet 29 ACK timeout
+Packet 30 dropped (simulated)
+Packet 31 sent successfully, RTT: 1.044772ms
+Packet 32 sent successfully, RTT: 83.602µs
+Packet 33 sent successfully, RTT: 899.57µs
+Packet 34 sent successfully, RTT: 508.554µs
+Packet 35 sent successfully, RTT: 1.385311ms
+Packet 36 sent successfully, RTT: 6.00663ms
+Packet 37 dropped (simulated)
+Packet 38 dropped (simulated)
+Packet 39 sent successfully, RTT: 966.902µs
+Packet 40 dropped (simulated)
+Packet 41 sent successfully, RTT: 325.506µs
+Packet 42 sent successfully, RTT: 2.331979ms
+Packet 43 dropped (simulated)
+Packet 44 sent successfully, RTT: 253.935µs
+Packet 45 dropped (simulated)
+Packet 46 ACK timeout
+Packet 47 dropped (simulated)
+Packet 48 ACK timeout
+Packet 49 sent successfully, RTT: 399.968µs
+Packet 50 ACK timeout
+Packet 51 dropped (simulated)
+Packet 52 sent successfully, RTT: 687.376µs
+Packet 53 dropped (simulated)
+Packet 54 sent successfully, RTT: 1.69796ms
+Packet 55 dropped (simulated)
+Packet 56 dropped (simulated)
+Packet 57 dropped (simulated)
+Packet 58 ACK timeout
+Packet 59 dropped (simulated)
+Packet 60 sent successfully, RTT: 171.002µs
+Packet 61 sent successfully, RTT: 1.174575ms
+Packet 62 dropped (simulated)
+Packet 63 dropped (simulated)
+Packet 64 ACK timeout
+Packet 65 dropped (simulated)
+Packet 66 sent successfully, RTT: 705.666µs
+Packet 67 dropped (simulated)
+Packet 68 ACK timeout
+Packet 69 sent successfully, RTT: 1.236845ms
+Packet 70 dropped (simulated)
+Packet 71 sent successfully, RTT: 138.863µs
+Packet 72 dropped (simulated)
+Packet 73 dropped (simulated)
+Packet 74 dropped (simulated)
+Packet 75 dropped (simulated)
+Packet 76 ACK timeout
+Packet 77 ACK timeout
+Packet 78 sent successfully, RTT: 133.937µs
+Packet 79 ACK timeout
+Packet 80 dropped (simulated)
+Packet 81 sent successfully, RTT: 126.138µs
+Packet 82 dropped (simulated)
+Packet 83 ACK timeout
+Packet 84 dropped (simulated)
+Packet 85 sent successfully, RTT: 161.088µs
+Packet 86 ACK timeout
+Packet 87 dropped (simulated)
+Packet 88 ACK timeout
+Packet 89 dropped (simulated)
+Packet 90 ACK timeout
+Packet 91 dropped (simulated)
+Packet 92 ACK timeout
+Packet 93 sent successfully, RTT: 733.105µs
+Packet 94 dropped (simulated)
+Packet 95 sent successfully, RTT: 771.333µs
+Packet 96 sent successfully, RTT: 502.055µs
+Packet 97 ACK timeout
+Packet 98 sent successfully, RTT: 814.569µs
+Packet 99 dropped (simulated)
+Packet 100 dropped (simulated)
+Packet 101 dropped (simulated)
+Packet 102 ACK timeout
+Packet 103 dropped (simulated)
+Packet 104 dropped (simulated)
+Packet 105 dropped (simulated)
+Packet 106 dropped (simulated)
+Packet 107 ACK timeout
+Packet 108 dropped (simulated)
+Packet 109 sent successfully, RTT: 1.961986ms
+Packet 110 dropped (simulated)
+Packet 111 sent successfully, RTT: 249.281µs
+Packet 112 dropped (simulated)
+Packet 113 dropped (simulated)
+Packet 114 dropped (simulated)
+Packet 115 dropped (simulated)
+Packet 116 ACK timeout
+Packet 117 dropped (simulated)
+Packet 118 sent successfully, RTT: 1.159422ms
+Packet 119 ACK timeout
+Packet 120 ACK timeout
+Packet 121 sent successfully, RTT: 619.886µs
+Packet 122 sent successfully, RTT: 338.734µs
+Packet 123 sent successfully, RTT: 684.387µs
+Packet 124 dropped (simulated)
+Packet 125 ACK timeout
+Packet 126 dropped (simulated)
+Packet 127 sent successfully, RTT: 122.25µs
+Packet 128 dropped (simulated)
+Packet 129 dropped (simulated)
+Packet 130 sent successfully, RTT: 90.559µs
+Packet 131 ACK timeout
+Packet 132 dropped (simulated)
+Packet 133 sent successfully, RTT: 752µs
+Packet 134 sent successfully, RTT: 94.53µs
+Packet 135 ACK timeout
+Packet 136 ACK timeout
+Packet 137 dropped (simulated)
+Packet 138 dropped (simulated)
+Packet 139 dropped (simulated)
+Packet 140 dropped (simulated)
+Packet 141 sent successfully, RTT: 1.162341ms
+Packet 142 dropped (simulated)
+Packet 143 sent successfully, RTT: 12.107222ms
+Packet 144 dropped (simulated)
+Packet 145 dropped (simulated)
+Packet 146 dropped (simulated)
+Packet 147 dropped (simulated)
+Packet 148 dropped (simulated)
+Packet 149 dropped (simulated)
+Packet 150 ACK timeout
+Packet 151 dropped (simulated)
+Packet 152 sent successfully, RTT: 129.885µs
+Packet 153 dropped (simulated)
+Packet 154 ACK timeout
+Packet 155 dropped (simulated)
+Packet 156 dropped (simulated)
+Packet 157 dropped (simulated)
+Packet 158 sent successfully, RTT: 194.862µs
+Packet 159 sent successfully, RTT: 773.398µs
+Packet 160 ACK timeout
+Packet 161 dropped (simulated)
+Packet 162 dropped (simulated)
+Packet 163 ACK timeout
+Packet 164 ACK timeout
+Packet 165 ACK timeout
+Packet 166 ACK timeout
+Packet 167 dropped (simulated)
+Packet 168 dropped (simulated)
+Packet 169 dropped (simulated)
+Packet 170 dropped (simulated)
+Packet 171 sent successfully, RTT: 161.653µs
+Packet 172 dropped (simulated)
+Packet 173 sent successfully, RTT: 1.328618ms
+Packet 174 ACK timeout
+Packet 175 dropped (simulated)
+Packet 176 dropped (simulated)
+Packet 177 dropped (simulated)
+Packet 178 sent successfully, RTT: 676.628µs
+Packet 179 dropped (simulated)
+Packet 180 sent successfully, RTT: 356.912µs
+Packet 181 ACK timeout
+Packet 182 sent successfully, RTT: 321.154µs
+Packet 183 dropped (simulated)
+Packet 184 sent successfully, RTT: 259.885µs
+Packet 185 sent successfully, RTT: 207.345µs
+Packet 186 sent successfully, RTT: 8.905228ms
+Packet 187 dropped (simulated)
+Packet 188 dropped (simulated)
+Packet 189 ACK timeout
+Packet 190 dropped (simulated)
+Packet 191 ACK timeout
+Packet 192 sent successfully, RTT: 870.015µs
+Packet 193 sent successfully, RTT: 924.544µs
+Packet 194 sent successfully, RTT: 6.565646ms
+Packet 195 dropped (simulated)
+Packet 196 sent successfully, RTT: 179.429µs
+Packet 197 sent successfully, RTT: 76.906µs
+Packet 198 dropped (simulated)
+Packet 199 dropped (simulated)
+Packet 200 sent successfully, RTT: 52.491µs
+Packet 201 dropped (simulated)
+Packet 202 ACK timeout
+Packet 203 sent successfully, RTT: 142.463µs
+Packet 204 ACK timeout
+Packet 205 ACK timeout
+Packet 206 ACK timeout
+Packet 207 dropped (simulated)
+Packet 208 sent successfully, RTT: 787.318µs
+Packet 209 ACK timeout
+Packet 210 dropped (simulated)
+Packet 211 ACK timeout
+Packet 212 sent successfully, RTT: 585.709µs
+Packet 213 ACK timeout
+Packet 214 sent successfully, RTT: 579.535µs
+Packet 215 dropped (simulated)
+Packet 216 ACK timeout
+Packet 217 dropped (simulated)
+Packet 218 sent successfully, RTT: 1.700345ms
+Packet 219 ACK timeout
+Packet 220 ACK timeout
+Packet 221 sent successfully, RTT: 1.363609ms
+Packet 222 sent successfully, RTT: 21.350158ms
+Packet 223 ACK timeout
+Packet 224 dropped (simulated)
+Packet 225 dropped (simulated)
+Packet 226 dropped (simulated)
+Packet 227 dropped (simulated)
+Packet 228 ACK timeout
+Packet 229 dropped (simulated)
+Packet 230 sent successfully, RTT: 2.705746ms
+Packet 231 dropped (simulated)
+Packet 232 sent successfully, RTT: 1.702176ms
+Packet 233 dropped (simulated)
+Packet 234 sent successfully, RTT: 289.662µs
+Packet 235 ACK timeout
+Packet 236 dropped (simulated)
+Packet 237 dropped (simulated)
+Packet 238 dropped (simulated)
+Packet 239 dropped (simulated)
+Packet 240 sent successfully, RTT: 1.406184ms
+Packet 241 dropped (simulated)
+Packet 242 dropped (simulated)
+Packet 243 ACK timeout
+Packet 244 dropped (simulated)
+Packet 245 sent successfully, RTT: 1.284234ms
+Packet 246 sent successfully, RTT: 127.514µs
+Packet 247 sent successfully, RTT: 1.138225ms
+Packet 248 dropped (simulated)
+Packet 249 dropped (simulated)
+Packet 250 sent successfully, RTT: 1.135658ms
+Packet 251 sent successfully, RTT: 1.051972ms
+Packet 252 ACK timeout
+Packet 253 sent successfully, RTT: 1.194125ms
+Packet 254 dropped (simulated)
+Packet 255 dropped (simulated)
+Packet 256 ACK timeout
+Packet 257 dropped (simulated)
+Packet 258 ACK timeout
+Packet 259 dropped (simulated)
+Packet 260 sent successfully, RTT: 1.083747ms
+Packet 261 dropped (simulated)
+Packet 262 dropped (simulated)
+Packet 263 sent successfully, RTT: 586.657µs
+Packet 264 sent successfully, RTT: 817.886µs
+Packet 265 ACK timeout
+Packet 266 dropped (simulated)
+Packet 267 dropped (simulated)
+Packet 268 dropped (simulated)
+Packet 269 sent successfully, RTT: 926.615µs
+Packet 270 ACK timeout
+Packet 271 ACK timeout
+Packet 272 ACK timeout
+Packet 273 sent successfully, RTT: 201.799µs
+Packet 274 ACK timeout
+Packet 275 ACK timeout
+Packet 276 sent successfully, RTT: 467.523µs
+Packet 277 dropped (simulated)
+Packet 278 dropped (simulated)
+Packet 279 dropped (simulated)
+Packet 280 ACK timeout
+Packet 281 dropped (simulated)
+Packet 282 dropped (simulated)
+Packet 283 ACK timeout
+Packet 284 ACK timeout
+Packet 285 dropped (simulated)
+Packet 286 ACK timeout
+Packet 287 dropped (simulated)
+Packet 288 sent successfully, RTT: 859.555µs
+Packet 289 dropped (simulated)
+Packet 290 dropped (simulated)
+Packet 291 ACK timeout
+Packet 292 sent successfully, RTT: 333.086µs
+Packet 293 dropped (simulated)
+Packet 294 dropped (simulated)
+Packet 295 sent successfully, RTT: 192.19µs
+Packet 296 dropped (simulated)
+Packet 297 sent successfully, RTT: 421.627µs
+Packet 298 dropped (simulated)
+Packet 299 sent successfully, RTT: 101.722µs
+Packet 300 dropped (simulated)
+Packet 301 dropped (simulated)
+Packet 302 ACK timeout
+Packet 303 sent successfully, RTT: 1.132326ms
+Packet 304 sent successfully, RTT: 917.375µs
+Packet 305 dropped (simulated)
+Packet 306 dropped (simulated)
+Packet 307 dropped (simulated)
+Packet 308 dropped (simulated)
+Packet 309 dropped (simulated)
+Packet 310 sent successfully, RTT: 2.416442ms
+Packet 311 dropped (simulated)
+Packet 312 sent successfully, RTT: 2.801099ms
+Packet 313 sent successfully, RTT: 4.52784ms
+Packet 314 sent successfully, RTT: 136.031µs
+Packet 315 dropped (simulated)
+Packet 316 ACK timeout
+Packet 317 ACK timeout
+Packet 318 sent successfully, RTT: 2.240301ms
+Packet 319 sent successfully, RTT: 4.843104ms
+Packet 320 sent successfully, RTT: 720.347µs
+Packet 321 dropped (simulated)
+Packet 322 sent successfully, RTT: 143.298µs
+Packet 323 sent successfully, RTT: 116.008µs
+Packet 324 dropped (simulated)
+Packet 325 ACK timeout
+Packet 326 sent successfully, RTT: 1.277003ms
+Packet 327 sent successfully, RTT: 215.773µs
+Packet 328 dropped (simulated)
+Packet 329 sent successfully, RTT: 116.529µs
+Packet 330 sent successfully, RTT: 171.428µs
+Packet 331 ACK timeout
+Packet 332 dropped (simulated)
+Packet 333 sent successfully, RTT: 150.077µs
+Packet 334 dropped (simulated)
+Packet 335 dropped (simulated)
+Packet 336 dropped (simulated)
+Packet 337 dropped (simulated)
+Packet 338 sent successfully, RTT: 826.96µs
+Packet 339 ACK timeout
+Packet 340 sent successfully, RTT: 239.275µs
+Packet 341 ACK timeout
+Packet 342 dropped (simulated)
+Packet 343 sent successfully, RTT: 1.628618ms
+Packet 344 sent successfully, RTT: 1.610017ms
+Packet 345 ACK timeout
+Packet 346 ACK timeout
+Packet 347 dropped (simulated)
+Packet 348 sent successfully, RTT: 778.892µs
+Packet 349 sent successfully, RTT: 1.846972ms
+Packet 350 ACK timeout
+Packet 351 ACK timeout
+Packet 352 sent successfully, RTT: 408.735µs
+Packet 353 dropped (simulated)
+Packet 354 dropped (simulated)
+Packet 355 ACK timeout
+Packet 356 sent successfully, RTT: 614.019µs
+Packet 357 sent successfully, RTT: 11.47505ms
+Packet 358 sent successfully, RTT: 54.369µs
+Packet 359 sent successfully, RTT: 1.981267ms
+Packet 360 sent successfully, RTT: 602.047µs
+Packet 361 sent successfully, RTT: 5.162378ms
+Packet 362 dropped (simulated)
+Packet 363 ACK timeout
+Packet 364 sent successfully, RTT: 509.424µs
+Packet 365 sent successfully, RTT: 57.715µs
+Packet 366 dropped (simulated)
+Packet 367 ACK timeout
+Packet 368 sent successfully, RTT: 1.364647ms
+Packet 369 dropped (simulated)
+Packet 370 sent successfully, RTT: 157.797µs
+Packet 371 sent successfully, RTT: 113.216µs
+Packet 372 ACK timeout
+Packet 373 sent successfully, RTT: 1.939776ms
+Packet 374 ACK timeout
+Packet 375 sent successfully, RTT: 1.461021ms
+Packet 376 ACK timeout
+Packet 377 sent successfully, RTT: 660.579µs
+Packet 378 ACK timeout
+Packet 379 sent successfully, RTT: 313.32µs
+Packet 380 sent successfully, RTT: 428.787µs
+Packet 381 ACK timeout
+Packet 382 sent successfully, RTT: 4.68436ms
+Packet 383 sent successfully, RTT: 319.754µs
+Packet 384 ACK timeout
+Packet 385 sent successfully, RTT: 1.938336ms
+Packet 386 sent successfully, RTT: 2.990205ms
+Packet 387 ACK timeout
+Packet 388 sent successfully, RTT: 1.440961ms
+Packet 389 sent successfully, RTT: 1.988864ms
+Packet 390 sent successfully, RTT: 11.359743ms
+Packet 391 ACK timeout
+Packet 392 dropped (simulated)
+Packet 393 sent successfully, RTT: 147.157µs
+Packet 394 ACK timeout
+Packet 395 dropped (simulated)
+Packet 396 ACK timeout
+Packet 397 ACK timeout
+Packet 398 ACK timeout
+Packet 399 ACK timeout
+Packet 400 sent successfully, RTT: 1.409489ms
+Packet 401 dropped (simulated)
+Packet 402 sent successfully, RTT: 1.543645ms
+Packet 403 dropped (simulated)
+Packet 404 sent successfully, RTT: 205.53µs
+Packet 405 sent successfully, RTT: 132.063µs
+Packet 406 sent successfully, RTT: 60.614µs
+Packet 407 sent successfully, RTT: 130.465µs
+Packet 408 ACK timeout
+Packet 409 sent successfully, RTT: 138.151µs
+Packet 410 sent successfully, RTT: 249.239µs
+Packet 411 ACK timeout
+Packet 412 dropped (simulated)
+Packet 413 sent successfully, RTT: 272.519µs
+Packet 414 dropped (simulated)
+Packet 415 dropped (simulated)
+Packet 416 sent successfully, RTT: 4.718461ms
+Packet 417 sent successfully, RTT: 491.425µs
+Packet 418 dropped (simulated)
+Packet 419 sent successfully, RTT: 69.734µs
+Packet 420 dropped (simulated)
+Packet 421 dropped (simulated)
+Packet 422 dropped (simulated)
+Packet 423 sent successfully, RTT: 71.883µs
+Packet 424 sent successfully, RTT: 826.214µs
+Packet 425 sent successfully, RTT: 3.053175ms
+Packet 426 ACK timeout
+Packet 427 sent successfully, RTT: 1.946892ms
+Packet 428 ACK timeout
+Packet 429 ACK timeout
+Packet 430 sent successfully, RTT: 186.734µs
+Packet 431 sent successfully, RTT: 11.283296ms
+Packet 432 sent successfully, RTT: 449.761µs
+Packet 433 dropped (simulated)
+Packet 434 ACK timeout
+Packet 435 dropped (simulated)
+Packet 436 sent successfully, RTT: 819.182µs
+Packet 437 sent successfully, RTT: 239.406µs
+Packet 438 sent successfully, RTT: 359.452µs
+Packet 439 ACK timeout
+Packet 440 dropped (simulated)
+Packet 441 dropped (simulated)
+Packet 442 dropped (simulated)
+Packet 443 ACK timeout
+Packet 444 dropped (simulated)
+Packet 445 sent successfully, RTT: 1.728563ms
+Packet 446 dropped (simulated)
+Packet 447 sent successfully, RTT: 7.07034ms
+Packet 448 sent successfully, RTT: 2.41564ms
+Packet 449 sent successfully, RTT: 154.045µs
+Packet 450 ACK timeout
+Packet 451 ACK timeout
+Packet 452 sent successfully, RTT: 447.497µs
+Packet 453 dropped (simulated)
+Packet 454 sent successfully, RTT: 1.076028ms
+Packet 455 sent successfully, RTT: 651.887µs
+Packet 456 dropped (simulated)
+Packet 457 dropped (simulated)
+Packet 458 sent successfully, RTT: 1.241884ms
+Packet 459 sent successfully, RTT: 149.503µs
+Packet 460 dropped (simulated)
+Packet 461 dropped (simulated)
+Packet 462 dropped (simulated)
+Packet 463 ACK timeout
+Packet 464 ACK timeout
+Packet 465 sent successfully, RTT: 1.61966ms
+Packet 466 dropped (simulated)
+Packet 467 dropped (simulated)
+Packet 468 ACK timeout
+Packet 469 dropped (simulated)
+Packet 470 ACK timeout
+Packet 471 dropped (simulated)
+Packet 472 dropped (simulated)
+Packet 473 dropped (simulated)
+Packet 474 dropped (simulated)
+Packet 475 sent successfully, RTT: 1.97967ms
+Packet 476 dropped (simulated)
+Packet 477 dropped (simulated)
+Packet 478 dropped (simulated)
+Packet 479 sent successfully, RTT: 532.174µs
+Packet 480 sent successfully, RTT: 126.122µs
+Packet 481 dropped (simulated)
+Packet 482 sent successfully, RTT: 167.006µs
+Packet 483 ACK timeout
+Packet 484 sent successfully, RTT: 485.223µs
+Packet 485 sent successfully, RTT: 947.733µs
+Packet 486 dropped (simulated)
+Packet 487 sent successfully, RTT: 112.262µs
+Packet 488 dropped (simulated)
+Packet 489 sent successfully, RTT: 213.561µs
+Packet 490 sent successfully, RTT: 115.87µs
+Packet 491 sent successfully, RTT: 242.521µs
+Packet 492 ACK timeout
+Packet 493 dropped (simulated)
+Packet 494 dropped (simulated)
+Packet 495 dropped (simulated)
+Packet 496 sent successfully, RTT: 203.414µs
+Packet 497 sent successfully, RTT: 948.407µs
+Packet 498 dropped (simulated)
+Packet 499 ACK timeout
+Packet 500 sent successfully, RTT: 82.399µs
+Packet 501 sent successfully, RTT: 97.634µs
+Packet 502 dropped (simulated)
+Packet 503 sent successfully, RTT: 382.809µs
+Packet 504 dropped (simulated)
+Packet 505 ACK timeout
+Packet 506 sent successfully, RTT: 281.304µs
+Packet 507 dropped (simulated)
+Packet 508 ACK timeout
+Packet 509 sent successfully, RTT: 194.531µs
+Packet 510 ACK timeout
+Packet 511 sent successfully, RTT: 706.854µs
+Packet 512 dropped (simulated)
+Packet 513 dropped (simulated)
+Packet 514 sent successfully, RTT: 104.418µs
+Packet 515 sent successfully, RTT: 400.415µs
+Packet 516 ACK timeout
+Packet 517 dropped (simulated)
+Packet 518 sent successfully, RTT: 111.529µs
+Packet 519 sent successfully, RTT: 83.213µs
+Packet 520 ACK timeout
+Packet 521 sent successfully, RTT: 1.214712ms
+Packet 522 ACK timeout
+Packet 523 ACK timeout
+Packet 524 sent successfully, RTT: 1.178333ms
+Packet 525 sent successfully, RTT: 135.569µs
+Packet 526 dropped (simulated)
+Packet 527 sent successfully, RTT: 2.045919ms
+Packet 528 sent successfully, RTT: 1.597732ms
+Packet 529 sent successfully, RTT: 253.512µs
+Packet 530 ACK timeout
+Packet 531 sent successfully, RTT: 1.880149ms
+Packet 532 sent successfully, RTT: 17.015054ms
+Packet 533 dropped (simulated)
+Packet 534 dropped (simulated)
+Packet 535 sent successfully, RTT: 873.071µs
+Packet 536 ACK timeout
+Packet 537 dropped (simulated)
+Packet 538 ACK timeout
+Packet 539 sent successfully, RTT: 1.060849ms
+Packet 540 dropped (simulated)
+Packet 541 dropped (simulated)
+Packet 542 dropped (simulated)
+Packet 543 dropped (simulated)
+Packet 544 sent successfully, RTT: 916.234µs
+Packet 545 ACK timeout
+Packet 546 ACK timeout
+Packet 547 sent successfully, RTT: 501.913µs
+Packet 548 dropped (simulated)
+Packet 549 dropped (simulated)
+Packet 550 dropped (simulated)
+Packet 551 sent successfully, RTT: 153.568µs
+Packet 552 sent successfully, RTT: 257.7µs
+Packet 553 sent successfully, RTT: 139.84µs
+Packet 554 sent successfully, RTT: 1.09804ms
+Packet 555 ACK timeout
+Packet 556 sent successfully, RTT: 633.727µs
+Packet 557 dropped (simulated)
+Packet 558 sent successfully, RTT: 1.104349ms
+Packet 559 ACK timeout
+Packet 560 ACK timeout
+Packet 561 sent successfully, RTT: 722.036µs
+Packet 562 dropped (simulated)
+Packet 563 sent successfully, RTT: 765.721µs
+Packet 564 sent successfully, RTT: 103.369µs
+Packet 565 ACK timeout
+Packet 566 dropped (simulated)
+Packet 567 dropped (simulated)
+Packet 568 dropped (simulated)
+Packet 569 sent successfully, RTT: 5.390757ms
+Packet 570 ACK timeout
+Packet 571 dropped (simulated)
+Packet 572 sent successfully, RTT: 2.20665ms
+Packet 573 sent successfully, RTT: 1.240524ms
+Packet 574 ACK timeout
+Packet 575 sent successfully, RTT: 1.371669ms
+Packet 576 ACK timeout
+Packet 577 sent successfully, RTT: 1.831542ms
+Packet 578 sent successfully, RTT: 1.123882ms
+Packet 579 sent successfully, RTT: 389.707µs
+Packet 580 dropped (simulated)
+Packet 581 ACK timeout
+Packet 582 ACK timeout
+Packet 583 dropped (simulated)
+Packet 584 ACK timeout
+Packet 585 dropped (simulated)
+Packet 586 dropped (simulated)
+Packet 587 dropped (simulated)
+Packet 588 dropped (simulated)
+Packet 589 dropped (simulated)
+Packet 590 dropped (simulated)
+Packet 591 ACK timeout
+Packet 592 ACK timeout
+Packet 593 dropped (simulated)
+Packet 594 dropped (simulated)
+Packet 595 dropped (simulated)
+Packet 596 sent successfully, RTT: 1.651367ms
+Packet 597 dropped (simulated)
+Packet 598 ACK timeout
+Packet 599 dropped (simulated)
+Packet 600 ACK timeout
+Packet 601 sent successfully, RTT: 1.475069ms
+Packet 602 dropped (simulated)
+Packet 603 dropped (simulated)
+Packet 604 dropped (simulated)
+Packet 605 dropped (simulated)
+Packet 606 sent successfully, RTT: 4.875467ms
+Packet 607 dropped (simulated)
+Packet 608 sent successfully, RTT: 886.496µs
+Packet 609 sent successfully, RTT: 874.428µs
+Packet 610 dropped (simulated)
+Packet 611 sent successfully, RTT: 162.172µs
+Packet 612 sent successfully, RTT: 1.347332ms
+Packet 613 sent successfully, RTT: 1.322978ms
+Packet 614 sent successfully, RTT: 128.198µs
+Packet 615 sent successfully, RTT: 132.169µs
+Packet 616 sent successfully, RTT: 282.115µs
+Packet 617 sent successfully, RTT: 151.04µs
+Packet 618 dropped (simulated)
+Packet 619 dropped (simulated)
+Packet 620 dropped (simulated)
+Packet 621 sent successfully, RTT: 494.781µs
+Packet 622 sent successfully, RTT: 140.161µs
+Packet 623 dropped (simulated)
+Packet 624 dropped (simulated)
+Packet 625 sent successfully, RTT: 453.2µs
+Packet 626 sent successfully, RTT: 365.657µs
+Packet 627 ACK timeout
+Packet 628 dropped (simulated)
+Packet 629 dropped (simulated)
+Packet 630 sent successfully, RTT: 129.446µs
+Packet 631 ACK timeout
+Packet 632 dropped (simulated)
+Packet 633 dropped (simulated)
+Packet 634 sent successfully, RTT: 220.571µs
+Packet 635 sent successfully, RTT: 1.417651ms
+Packet 636 dropped (simulated)
+Packet 637 sent successfully, RTT: 2.287354ms
+Packet 638 sent successfully, RTT: 139.471µs
+Packet 639 dropped (simulated)
+Packet 640 sent successfully, RTT: 160.474µs
+Packet 641 dropped (simulated)
+Packet 642 dropped (simulated)
+Packet 643 ACK timeout
+Packet 644 sent successfully, RTT: 830.18µs
+Packet 645 ACK timeout
+Packet 646 dropped (simulated)
+Packet 647 sent successfully, RTT: 882.038µs
+Packet 648 sent successfully, RTT: 1.992207ms
+Packet 649 dropped (simulated)
+Packet 650 sent successfully, RTT: 174.883µs
+Packet 651 sent successfully, RTT: 781.779µs
+Packet 652 sent successfully, RTT: 5.612008ms
+Packet 653 dropped (simulated)
+Packet 654 dropped (simulated)
+Packet 655 sent successfully, RTT: 260.317µs
+Packet 656 dropped (simulated)
+Packet 657 sent successfully, RTT: 5.729217ms
+Packet 658 sent successfully, RTT: 5.446226ms
+Packet 659 sent successfully, RTT: 224.886µs
+Packet 660 sent successfully, RTT: 7.578061ms
+Packet 661 dropped (simulated)
+Packet 662 sent successfully, RTT: 20.815336ms
+Packet 663 sent successfully, RTT: 1.214025ms
+Packet 664 sent successfully, RTT: 1.378988ms
+Packet 665 sent successfully, RTT: 1.235041ms
+Packet 666 sent successfully, RTT: 143.551µs
+Packet 667 dropped (simulated)
+Packet 668 sent successfully, RTT: 313.773µs
+Packet 669 dropped (simulated)
+Packet 670 ACK timeout
+Packet 671 dropped (simulated)
+Packet 672 ACK timeout
+Packet 673 dropped (simulated)
+Packet 674 dropped (simulated)
+Packet 675 sent successfully, RTT: 148.447µs
+Packet 676 dropped (simulated)
+Packet 677 sent successfully, RTT: 207.744µs
+Packet 678 ACK timeout
+Packet 679 sent successfully, RTT: 558.702µs
+Packet 680 sent successfully, RTT: 170.339µs
+Packet 681 ACK timeout
+Packet 682 sent successfully, RTT: 157.806µs
+Packet 683 sent successfully, RTT: 577.639µs
+Packet 684 dropped (simulated)
+Packet 685 ACK timeout
+Packet 686 dropped (simulated)
+Packet 687 sent successfully, RTT: 106.181µs
+Packet 688 ACK timeout
+Packet 689 ACK timeout
+Packet 690 sent successfully, RTT: 235.658µs
+Packet 691 dropped (simulated)
+Packet 692 dropped (simulated)
+Packet 693 sent successfully, RTT: 1.643928ms
+Packet 694 dropped (simulated)
+Packet 695 sent successfully, RTT: 1.423835ms
+Packet 696 sent successfully, RTT: 805.723µs
+Packet 697 ACK timeout
+Packet 698 dropped (simulated)
+Packet 699 sent successfully, RTT: 2.328436ms
+Packet 700 sent successfully, RTT: 2.244658ms
+Packet 701 ACK timeout
+Packet 702 ACK timeout
+Packet 703 dropped (simulated)
+Packet 704 ACK timeout
+Packet 705 dropped (simulated)
+Packet 706 sent successfully, RTT: 2.256848ms
+Packet 707 ACK timeout
+Packet 708 sent successfully, RTT: 2.93147ms
+Packet 709 sent successfully, RTT: 6.127904ms
+Packet 710 sent successfully, RTT: 5.01497ms
+Packet 711 sent successfully, RTT: 4.590204ms
+Packet 712 dropped (simulated)
+Packet 713 dropped (simulated)
+Packet 714 ACK timeout
+Packet 715 dropped (simulated)
+Packet 716 ACK timeout
+Packet 717 sent successfully, RTT: 168.757µs
+Packet 718 dropped (simulated)
+Packet 719 ACK timeout
+Packet 720 sent successfully, RTT: 1.843902ms
+Packet 721 sent successfully, RTT: 621.502µs
+Packet 722 sent successfully, RTT: 349.912µs
+Packet 723 dropped (simulated)
+Packet 724 sent successfully, RTT: 1.0386ms
+Packet 725 dropped (simulated)
+Packet 726 sent successfully, RTT: 140.998µs
+Packet 727 sent successfully, RTT: 162.485µs
+Packet 728 ACK timeout
+Packet 729 sent successfully, RTT: 178.318µs
+Packet 730 sent successfully, RTT: 849.137µs
+Packet 731 ACK timeout
+Packet 732 sent successfully, RTT: 829.135µs
+Packet 733 dropped (simulated)
+Packet 734 dropped (simulated)
+Packet 735 dropped (simulated)
+Packet 736 dropped (simulated)
+Packet 737 dropped (simulated)
+Packet 738 dropped (simulated)
+Packet 739 ACK timeout
+Packet 740 sent successfully, RTT: 366.061µs
+Packet 741 ACK timeout
+Packet 742 dropped (simulated)
+Packet 743 ACK timeout
+Packet 744 dropped (simulated)
+Packet 745 dropped (simulated)
+Packet 746 sent successfully, RTT: 1.206377ms
+Packet 747 dropped (simulated)
+Packet 748 sent successfully, RTT: 1.11121ms
+Packet 749 sent successfully, RTT: 27.132471ms
+Packet 750 ACK timeout
+Packet 751 dropped (simulated)
+Packet 752 sent successfully, RTT: 1.196698ms
+Packet 753 ACK timeout
+Packet 754 sent successfully, RTT: 1.002812ms
+Packet 755 dropped (simulated)
+Packet 756 ACK timeout
+Packet 757 dropped (simulated)
+Packet 758 dropped (simulated)
+Packet 759 dropped (simulated)
+Packet 760 sent successfully, RTT: 364.192µs
+Packet 761 dropped (simulated)
+Packet 762 sent successfully, RTT: 300.879µs
+Packet 763 dropped (simulated)
+Packet 764 dropped (simulated)
+Packet 765 dropped (simulated)
+Packet 766 dropped (simulated)
+Packet 767 ACK timeout
+Packet 768 sent successfully, RTT: 179.524µs
+Packet 769 sent successfully, RTT: 15.035883ms
+Packet 770 sent successfully, RTT: 9.03512ms
+Packet 771 sent successfully, RTT: 1.002822ms
+Packet 772 sent successfully, RTT: 4.07868ms
+Packet 773 dropped (simulated)
+Packet 774 sent successfully, RTT: 1.686079ms
+Packet 775 ACK timeout
+Packet 776 sent successfully, RTT: 286.986µs
+Packet 777 sent successfully, RTT: 168.457µs
+Packet 778 sent successfully, RTT: 1.338055ms
+Packet 779 sent successfully, RTT: 343.812µs
+Packet 780 dropped (simulated)
+Packet 781 dropped (simulated)
+Packet 782 dropped (simulated)
+Packet 783 dropped (simulated)
+Packet 784 sent successfully, RTT: 69.268µs
+Packet 785 sent successfully, RTT: 132.068µs
+Packet 786 ACK timeout
+Packet 787 sent successfully, RTT: 159.624µs
+Packet 788 dropped (simulated)
+Packet 789 sent successfully, RTT: 362.185µs
+Packet 790 dropped (simulated)
+Packet 791 sent successfully, RTT: 177.005µs
+Packet 792 sent successfully, RTT: 359.122µs
+Packet 793 dropped (simulated)
+Packet 794 ACK timeout
+Packet 795 sent successfully, RTT: 602.53µs
+Packet 796 ACK timeout
+Packet 797 sent successfully, RTT: 945.981µs
+Packet 798 ACK timeout
+Packet 799 ACK timeout
+Packet 800 ACK timeout
+Packet 801 dropped (simulated)
+Packet 802 sent successfully, RTT: 794.7µs
+Packet 803 dropped (simulated)
+Packet 804 dropped (simulated)
+Packet 805 sent successfully, RTT: 113.224µs
+Packet 806 sent successfully, RTT: 121.41µs
+Packet 807 dropped (simulated)
+Packet 808 sent successfully, RTT: 94.138µs
+Packet 809 dropped (simulated)
+Packet 810 dropped (simulated)
+Packet 811 ACK timeout
+Packet 812 sent successfully, RTT: 199.206µs
+Packet 813 sent successfully, RTT: 1.059927ms
+Packet 814 dropped (simulated)
+Packet 815 dropped (simulated)
+Packet 816 ACK timeout
+Packet 817 ACK timeout
+Packet 818 ACK timeout
+Packet 819 dropped (simulated)
+Packet 820 dropped (simulated)
+Packet 821 dropped (simulated)
+Packet 822 dropped (simulated)
+Packet 823 dropped (simulated)
+Packet 824 sent successfully, RTT: 1.236393ms
+Packet 825 sent successfully, RTT: 2.589551ms
+Packet 826 ACK timeout
+Packet 827 ACK timeout
+Packet 828 dropped (simulated)
+Packet 829 sent successfully, RTT: 162.12µs
+Packet 830 sent successfully, RTT: 1.74109ms
+Packet 831 dropped (simulated)
+Packet 832 sent successfully, RTT: 1.066258ms
+Packet 833 dropped (simulated)
+Packet 834 dropped (simulated)
+Packet 835 ACK timeout
+Packet 836 dropped (simulated)
+Packet 837 dropped (simulated)
+Packet 838 ACK timeout
+Packet 839 ACK timeout
+Packet 840 dropped (simulated)
+Packet 841 dropped (simulated)
+Packet 842 sent successfully, RTT: 1.140875ms
+Packet 843 sent successfully, RTT: 780.047µs
+Packet 844 dropped (simulated)
+Packet 845 dropped (simulated)
+Packet 846 sent successfully, RTT: 430.344µs
+Packet 847 ACK timeout
+Packet 848 sent successfully, RTT: 165.247µs
+Packet 849 ACK timeout
+Packet 850 dropped (simulated)
+Packet 851 dropped (simulated)
+Packet 852 dropped (simulated)
+Packet 853 sent successfully, RTT: 174.433µs
+Packet 854 dropped (simulated)
+Packet 855 dropped (simulated)
+Packet 856 ACK timeout
+Packet 857 ACK timeout
+Packet 858 sent successfully, RTT: 1.665753ms
+Packet 859 sent successfully, RTT: 1.138473ms
+Packet 860 dropped (simulated)
+Packet 861 dropped (simulated)
+Packet 862 dropped (simulated)
+Packet 863 dropped (simulated)
+Packet 864 ACK timeout
+Packet 865 sent successfully, RTT: 2.077532ms
+Packet 866 ACK timeout
+Packet 867 ACK timeout
+Packet 868 dropped (simulated)
+Packet 869 ACK timeout
+Packet 870 dropped (simulated)
+Packet 871 ACK timeout
+Packet 872 sent successfully, RTT: 259.125µs
+Packet 873 sent successfully, RTT: 2.272941ms
+Packet 874 dropped (simulated)
+Packet 875 sent successfully, RTT: 5.752177ms
+Packet 876 sent successfully, RTT: 289.3µs
+Packet 877 ACK timeout
+Packet 878 sent successfully, RTT: 566.232µs
+Packet 879 dropped (simulated)
+Packet 880 dropped (simulated)
+Packet 881 sent successfully, RTT: 397.327µs
+Packet 882 sent successfully, RTT: 125.239µs
+Packet 883 ACK timeout
+Packet 884 sent successfully, RTT: 597.76µs
+Packet 885 sent successfully, RTT: 754.559µs
+Packet 886 dropped (simulated)
+Packet 887 sent successfully, RTT: 247.741µs
+Packet 888 sent successfully, RTT: 147.928µs
+Packet 889 sent successfully, RTT: 317.593µs
+Packet 890 dropped (simulated)
+Packet 891 dropped (simulated)
+Packet 892 dropped (simulated)
+Packet 893 ACK timeout
+Packet 894 sent successfully, RTT: 1.031843ms
+Packet 895 sent successfully, RTT: 3.00288ms
+Packet 896 sent successfully, RTT: 150.231µs
+Packet 897 dropped (simulated)
+Packet 898 ACK timeout
+Packet 899 sent successfully, RTT: 205.086µs
+Packet 900 ACK timeout
+Packet 901 dropped (simulated)
+Packet 902 sent successfully, RTT: 1.787642ms
+Packet 903 dropped (simulated)
+Packet 904 ACK timeout
+Packet 905 sent successfully, RTT: 884.855µs
+Packet 906 sent successfully, RTT: 1.076909ms
+Packet 907 ACK timeout
+Packet 908 sent successfully, RTT: 3.337685ms
+Packet 909 ACK timeout
+Packet 910 ACK timeout
+Packet 911 sent successfully, RTT: 3.276577ms
+Packet 912 dropped (simulated)
+Packet 913 dropped (simulated)
+Packet 914 ACK timeout
+Packet 915 dropped (simulated)
+Packet 916 sent successfully, RTT: 243.902µs
+Packet 917 sent successfully, RTT: 141.276µs
+Packet 918 dropped (simulated)
+Packet 919 dropped (simulated)
+Packet 920 ACK timeout
+Packet 921 dropped (simulated)
+Packet 922 dropped (simulated)
+Packet 923 sent successfully, RTT: 2.073489ms
+Packet 924 dropped (simulated)
+Packet 925 sent successfully, RTT: 1.039241ms
+Packet 926 sent successfully, RTT: 990.716µs
+Packet 927 sent successfully, RTT: 556.268µs
+Packet 928 sent successfully, RTT: 748.652µs
+Packet 929 dropped (simulated)
+Packet 930 dropped (simulated)
+Packet 931 dropped (simulated)
+Packet 932 sent successfully, RTT: 579.993µs
+Packet 933 dropped (simulated)
+Packet 934 sent successfully, RTT: 176.811µs
+Packet 935 dropped (simulated)
+Packet 936 ACK timeout
+Packet 937 sent successfully, RTT: 2.902082ms
+Packet 938 dropped (simulated)
+Packet 939 dropped (simulated)
+Packet 940 ACK timeout
+Packet 941 dropped (simulated)
+Packet 942 ACK timeout
+Packet 943 dropped (simulated)
+Packet 944 sent successfully, RTT: 2.397199ms
+Packet 945 ACK timeout
+Packet 946 sent successfully, RTT: 1.995861ms
+Packet 947 sent successfully, RTT: 3.171194ms
+Packet 948 dropped (simulated)
+Packet 949 sent successfully, RTT: 1.842978ms
+Packet 950 dropped (simulated)
+Packet 951 sent successfully, RTT: 913.56µs
+Packet 952 ACK timeout
+Packet 953 dropped (simulated)
+Packet 954 ACK timeout
+Packet 955 dropped (simulated)
+Packet 956 dropped (simulated)
+Packet 957 ACK timeout
+Packet 958 dropped (simulated)
+Packet 959 sent successfully, RTT: 1.214665ms
+Packet 960 sent successfully, RTT: 863.27µs
+Packet 961 ACK timeout
+Packet 962 sent successfully, RTT: 848.84µs
+Packet 963 ACK timeout
+Packet 964 dropped (simulated)
+Packet 965 ACK timeout
+Packet 966 sent successfully, RTT: 1.000853ms
+Packet 967 sent successfully, RTT: 2.160427ms
+Packet 968 sent successfully, RTT: 2.370503ms
+Packet 969 sent successfully, RTT: 225.848µs
+Packet 970 sent successfully, RTT: 408.069µs
+Packet 971 dropped (simulated)
+Packet 972 ACK timeout
+Packet 973 dropped (simulated)
+Packet 974 dropped (simulated)
+Packet 975 dropped (simulated)
+Packet 976 ACK timeout
+Packet 977 sent successfully, RTT: 1.307174ms
+Packet 978 sent successfully, RTT: 774.9µs
+Packet 979 dropped (simulated)
+Packet 980 dropped (simulated)
+Packet 981 dropped (simulated)
+Packet 982 sent successfully, RTT: 2.112199ms
+Packet 983 ACK timeout
+Packet 984 dropped (simulated)
+Packet 985 dropped (simulated)
+Packet 986 dropped (simulated)
+Packet 987 sent successfully, RTT: 92.929µs
+Packet 988 sent successfully, RTT: 82.149µs
+Packet 989 sent successfully, RTT: 104.3µs
+Packet 990 dropped (simulated)
+Packet 991 dropped (simulated)
+Packet 992 dropped (simulated)
+Packet 993 ACK timeout
+Packet 994 sent successfully, RTT: 170.414µs
+Packet 995 dropped (simulated)
+Packet 996 dropped (simulated)
+Packet 997 sent successfully, RTT: 822.052µs
+Packet 998 sent successfully, RTT: 101.805µs
+Packet 999 ACK timeout
+Metric,Value
+Packets_Sent,609
+Packets_Received,392
+Dropped_Packets,217
+Packet_Loss_Rate,35.63
+Bandwidth_MBps,0.19354
+Average_RTT_ms,1.484
