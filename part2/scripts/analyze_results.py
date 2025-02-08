@@ -5,39 +5,51 @@ import glob
 import os
 import re
 
-def parse_log_file(file_path):
-    with open(file_path, 'r') as f:
-        content = f.read()
-    
-    # Look for the Results section specifically
-    results_section = content.split('Results:')[-1] if 'Results:' in content else content
-    
-    results = {}
+def parse_csv_file(file_path):
     try:
-        patterns = {
-            'packets_sent': r'Packets sent: (\d+)',
-            'packets_received': r'Packets received: (\d+)',
-            'initial_drops': r'Initial drops: (\d+)',
-            'final_loss': r'Final packet loss: ([\d.]+)%',
-            'bandwidth': r'Bandwidth: ([\d.]+)',
-            'avg_rtt': r'Average RTT: ([\d.]+)ms',
-            'duration': r'Total duration: ([\d.]+)s'
+        # Read CSV file, skipping any non-CSV output
+        with open(file_path, 'r') as f:
+            lines = f.readlines()
+        
+        # Find the start of CSV data
+        start_idx = -1
+        for i, line in enumerate(lines):
+            if line.strip() == "Metric,Value":
+                start_idx = i
+                break
+        
+        if start_idx == -1:
+            print(f"Warning: No CSV header found in {file_path}")
+            return None
+        
+        # Parse CSV data
+        metrics = {}
+        for line in lines[start_idx+1:]:
+            if ',' not in line:
+                continue
+            metric, value = line.strip().split(',')
+            try:
+                metrics[metric] = float(value)
+            except ValueError:
+                print(f"Warning: Could not parse value for {metric} in {file_path}")
+                continue
+        
+        # Map metrics to results
+        results = {
+            'packets_sent': int(metrics.get('Packets_Sent', 0)),
+            'packets_received': int(metrics.get('Packets_Received', 0)),
+            'dropped_packets': int(metrics.get('Dropped_Packets', 0)),
+            'packet_loss': float(metrics.get('Packet_Loss_Rate', 0)),
+            'bandwidth': float(metrics.get('Bandwidth_MBps', 0)),
+            'avg_rtt': float(metrics.get('Average_RTT_ms', 0))
         }
         
-        for key, pattern in patterns.items():
-            match = re.search(pattern, results_section)
-            if not match:
-                print(f"Warning: Could not find {key} in {file_path}")
-                return None
-            results[key] = float(match.group(1))
-            
         return pd.Series(results)
     except Exception as e:
-        print(f"Error parsing {file_path}: {e}")
+        print(f"Error parsing {file_path}: {str(e)}")
         return None
 
 def load_results(results_dir):
-    seen_files = set()  # Track processed files
     data = []
     
     # Print all available files for debugging
@@ -49,16 +61,12 @@ def load_results(results_dir):
     for opt_type in ["optimized", "unoptimized"]:
         file_pattern = os.path.join(results_dir, f"{opt_type}_rate*_size*.csv")
         for file in glob.glob(file_pattern):
-            if file in seen_files:
-                continue
-            seen_files.add(file)
-            
             try:
                 filename = os.path.basename(file)
                 rate = int(re.search(r'rate(\d+)', filename).group(1))
                 size = int(re.search(r'size(\d+)', filename).group(1))
                 
-                results = parse_log_file(file)
+                results = parse_csv_file(file)
                 if results is not None:
                     results['optimization'] = opt_type
                     results['drop_rate'] = rate
@@ -114,19 +122,20 @@ def analyze_performance():
         ax2.set_xlabel('Packet Size (bytes)', fontsize=10)
         ax2.legend(title='Optimization', title_fontsize=10, fontsize=9)
 
-        # 3. Initial Drops vs Drop Rate
-        sns.barplot(data=df, x='drop_rate', y='initial_drops', hue='optimization', 
-                   palette=custom_palette, ax=ax3)
-        ax3.set_title('Initial Drops vs Drop Rate', fontsize=12, pad=10)
-        ax3.set_ylabel('Initial Drops', fontsize=10)
+        # 3. Dropped Packets vs Drop Rate
+        sns.barplot(data=df, x='drop_rate', y='dropped_packets', hue='optimization',
+                    errorbar=('ci', 95), palette=custom_palette, ax=ax3)
+        ax3.set_title('Dropped Packets vs Drop Rate', fontsize=12, pad=10)
+        ax3.set_ylabel('Number of Dropped Packets', fontsize=10)
         ax3.set_xlabel('Drop Rate (%)', fontsize=10)
         ax3.legend(title='Optimization', title_fontsize=10, fontsize=9)
 
-        # 4. Final Loss Rate vs Drop Rate
-        sns.lineplot(data=df, x='drop_rate', y='final_loss', hue='optimization', 
-                    palette=custom_palette, marker='o', markersize=8, ax=ax4)
-        ax4.set_title('Final Loss Rate vs Drop Rate', fontsize=12, pad=10)
-        ax4.set_ylabel('Final Loss Rate (%)', fontsize=10)
+        # 4. Packet Loss vs Drop Rate
+        sns.lineplot(data=df, x='drop_rate', y='packet_loss', hue='optimization',
+                    errorbar=('ci', 95), err_style='band', marker='o', 
+                    palette=custom_palette, ax=ax4)
+        ax4.set_title('Packet Loss Rate vs Drop Rate', fontsize=12, pad=10)
+        ax4.set_ylabel('Packet Loss Rate (%)', fontsize=10)
         ax4.set_xlabel('Drop Rate (%)', fontsize=10)
         ax4.legend(title='Optimization', title_fontsize=10, fontsize=9)
 
@@ -145,8 +154,8 @@ def analyze_performance():
         summary = df.groupby(['optimization', 'drop_rate']).agg({
             'avg_rtt': 'mean',
             'bandwidth': 'mean',
-            'initial_drops': 'mean',
-            'final_loss': 'mean'
+            'dropped_packets': 'mean',
+            'packet_loss': 'mean'
         }).round(3)
         print(summary.to_string())
         

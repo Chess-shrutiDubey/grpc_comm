@@ -1,91 +1,125 @@
 package reliable_udp
 
 import (
-    "fmt"
-    "net"
-    "os"
-    "strconv"
-    "time"
+	"fmt"
+	"log"
+	"math/rand"
+	"net"
+	"os"
+	"strconv"
+	"time"
 )
 
+type PacketStatus struct {
+	sent     bool
+	received bool
+	dropped  bool
+	rtt      time.Duration
+}
+
 func RunSender() {
-    // Validate command line args
-    if len(os.Args) < 3 {
-        fmt.Println("Usage: sender <num_packets> <loss_rate>")
-        return
-    }
+	// Parse command line arguments
+	if len(os.Args) != 4 {
+		fmt.Printf("Usage: %s <packet_count> <drop_rate> <packet_size>\n", os.Args[0])
+		return
+	}
 
-    numPackets, err := strconv.Atoi(os.Args[1])
-    if err != nil || numPackets <= 0 {
-        fmt.Println("Invalid number of packets")
-        return
-    }
+	numPackets, err := strconv.Atoi(os.Args[1])
+	if err != nil {
+		log.Fatalf("Invalid packet count: %v", err)
+	}
 
-    lossRate, err := strconv.ParseFloat(os.Args[2], 64) 
-    if err != nil || lossRate < 0 || lossRate > 100 {
-        fmt.Println("Invalid loss rate (must be 0-100)")
-        return
-    }
+	dropRate, err := strconv.ParseFloat(os.Args[2], 64)
+	if err != nil {
+		log.Fatalf("Invalid drop rate: %v", err)
+	}
 
-    // Connect to receiver
-    serverAddr, err := net.ResolveUDPAddr("udp", "127.0.0.1:8080")
-    if err != nil {
-        fmt.Printf("Error resolving address: %v\n", err)
-        return
-    }
+	msgSize, err := strconv.Atoi(os.Args[3])
+	if err != nil {
+		log.Fatalf("Invalid packet size: %v", err)
+	}
 
-    conn, err := net.DialUDP("udp", nil, serverAddr) 
-    if err != nil {
-        fmt.Printf("Error connecting: %v\n", err)
-        return
-    }
-    defer conn.Close()
+	// Initialize random seed
+	rand.Seed(time.Now().UnixNano())
 
-    // Test RTT with small message
-    fmt.Println("Testing RTT with small message...")
-    msg := "ping"
-    rtt, err := SendReliable(conn, msg)
-    if err != nil {
-        fmt.Printf("Error sending ping: %v\n", err)
-        return
-    }
-    fmt.Printf("RTT for small message: %v\n", rtt)
+	// Initialize metrics
+	start := time.Now()
+	totalSent := 0
+	totalReceived := 0
+	totalBytes := 0
+	var totalRTT time.Duration
+	packetStatus := make([]PacketStatus, numPackets)
 
-    
-    // ... existing validation code ...
+	// Create test data
+	testData := make([]byte, msgSize)
+	rand.Read(testData)
 
-    fmt.Printf("\nMeasuring bandwidth with %d packets...\n", numPackets)
-    start := time.Now()
-    successCount := 0
-    totalBytes := 0
-    msgSize := 100 // Fixed size messages for consistent bandwidth measurement
+	// Connect to receiver
+	serverAddr, err := net.ResolveUDPAddr("udp", "127.0.0.1:8080")
+	if err != nil {
+		log.Fatalf("Failed to resolve address: %v", err)
+	}
 
-    for i := 0; i < numPackets; i++ {
-        // Create fixed-size packet
-        msg := fmt.Sprintf("%-*d", msgSize-1, i) // Pad with spaces to achieve fixed size
-        if rtt, err := SendReliable(conn, msg); err == nil {
-            successCount++
-            totalBytes += len(msg)
-            fmt.Printf("Packet %d sent successfully, RTT: %v\n", i, rtt)
-        } else {
-            fmt.Printf("Packet %d failed: %v\n", i, err)
-        }
-        time.Sleep(1 * time.Millisecond) // Add small delay between packets
-    }
+	conn, err := net.DialUDP("udp", nil, serverAddr)
+	if err != nil {
+		log.Fatalf("Failed to connect: %v", err)
+	}
+	defer conn.Close()
 
-    duration := time.Since(start)
-    stats := GetStatistics()
-    
-    // Calculate actual bandwidth (bytes/second)
-    bandwidthMBps := float64(totalBytes) / duration.Seconds() / (1024 * 1024)
-    
-    fmt.Printf("\nResults:\n")
-    fmt.Printf("Packets sent: %d\n", numPackets)
-    fmt.Printf("Packets received: %d\n", successCount)
-    fmt.Printf("Initial drops: %d\n", stats.droppedPackets)
-    fmt.Printf("Final packet loss: %.2f%%\n", 100-float64(successCount)/float64(numPackets)*100)
-    fmt.Printf("Bandwidth: %.5f MB/s\n", bandwidthMBps)
-    fmt.Printf("Average RTT: %v\n", stats.totalRTT/time.Duration(successCount))
-    fmt.Printf("Total duration: %v\n", duration)
-    
+	// Send packets
+	for i := 0; i < numPackets; i++ {
+		// Simulate packet loss based on drop rate
+		if rand.Float64() < dropRate/100.0 {
+			packetStatus[i].dropped = true
+			fmt.Fprintf(os.Stderr, "Packet %d dropped (simulated)\n", i)
+			continue
+		}
+
+		sendTime := time.Now()
+		_, err := conn.Write(testData)
+		if err != nil {
+			fmt.Fprintf(os.Stderr, "Failed to send packet %d: %v\n", i, err)
+			continue
+		}
+
+		packetStatus[i].sent = true
+		totalSent++
+		totalBytes += len(testData)
+
+		// Wait for ACK
+		ackBuffer := make([]byte, 64)
+		conn.SetReadDeadline(time.Now().Add(100 * time.Millisecond))
+		_, _, err = conn.ReadFromUDP(ackBuffer)
+
+		if err != nil {
+			fmt.Fprintf(os.Stderr, "Packet %d ACK timeout\n", i)
+		} else {
+			rtt := time.Since(sendTime)
+			packetStatus[i].received = true
+			packetStatus[i].rtt = rtt
+			totalRTT += rtt
+			totalReceived++
+			fmt.Fprintf(os.Stderr, "Packet %d sent successfully, RTT: %v\n", i, rtt)
+		}
+
+		time.Sleep(time.Millisecond)
+	}
+
+	// Calculate final metrics
+	duration := time.Since(start)
+	var avgRTT float64
+	if totalReceived > 0 {
+		avgRTT = float64(totalRTT.Microseconds()) / float64(totalReceived) / 1000.0 // Convert to ms
+	}
+	lossRate := 100.0 * float64(totalSent-totalReceived) / float64(totalSent)
+	bandwidthMBps := float64(totalBytes) / duration.Seconds() / (1024 * 1024)
+
+	// Write CSV metrics to stdout
+	fmt.Printf("Metric,Value\n")
+	fmt.Printf("Packets_Sent,%d\n", totalSent)
+	fmt.Printf("Packets_Received,%d\n", totalReceived)
+	fmt.Printf("Dropped_Packets,%d\n", totalSent-totalReceived)
+	fmt.Printf("Packet_Loss_Rate,%.2f\n", lossRate)
+	fmt.Printf("Bandwidth_MBps,%.5f\n", bandwidthMBps)
+	fmt.Printf("Average_RTT_ms,%.3f\n", avgRTT)
 }

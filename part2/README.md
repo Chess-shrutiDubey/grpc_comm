@@ -1,152 +1,110 @@
-# UDP Performance Testing Framework (Part 2)
+# UDP Performance Testing Framework
 
-## Project Structure
+## Overview
+This project implements reliable UDP communication with performance optimization testing capabilities. It measures RTT, packet loss, and bandwidth under various network conditions.
+
+## Directory Structure
 ```
 part2/
-├── bin/                    # Compiled binaries
-│   ├── receiver           # UDP receiver executable
-│   └── sender            # UDP sender executable
-├── cmd/                   # Source code for executables
-│   ├── receiver/         # Receiver implementation
-│   └── sender/          # Sender implementation
-├── config/               # Configuration files
-│   └── test_config.json # Test parameters
-├── performance/         # Performance measurement code
-│   ├── metrics.go      # Performance metrics collection
-│   └── test_runner.go  # Test orchestration
-├── results/            # Test results and analysis
-│   ├── optimization_tests_*/ # Timestamped test results
-│   └── remote_results/      # Results from remote testing
-└── scripts/                # Test automation scripts
-    ├── analyze_results.py  # Results analysis
-    ├── analyze_comprehensive.py # Detailed analysis
-    ├── run_optimization_tests.sh # Local testing
-    └── run_remote_tests.sh      # Remote testing
+├── reliable_udp/     # Core UDP implementation
+│   ├── sender.go     # Sender with performance metrics
+│   └── receiver.go   # Receiver implementation
+├── scripts/          # Test automation
+│   ├── run_optimization_tests.sh
+│   └── analyze_results.py
+├── results/          # Test results
+├── Makefile
+└── README.md
 ```
+
+## Requirements
+
+- Go 1.19+
+- Python 3.8+
+- Required Python packages:
+  - pandas
+  - seaborn
+  - matplotlib
 
 ## Quick Start
 
-### Building the Applications
+1. Install dependencies:
 ```bash
-# Build both sender and receiver
+pip3 install pandas seaborn matplotlib
+```
+
+2. Build the project:
+```bash
 make build
-
-# Build individual components
-make build-sender
-make build-receiver
 ```
 
-### Running Tests
-
-1. **Start the Receiver**
+3. Run tests:
 ```bash
-./bin/receiver
+# Terminal 1: Start receiver
+make run-receiver
+
+# Terminal 2: Run tests
+make test
 ```
 
-2. **Run Performance Tests**
+4. Analyze results:
 ```bash
-# Run optimization tests
-./scripts/run_optimization_tests.sh
-
-# Run remote tests
-./scripts/run_remote_tests.sh
+make analyze
 ```
 
-3. **Analyze Results**
+## Available Commands
+
+- `make build` - Builds sender and receiver
+- `make clean` - Cleans build artifacts and results
+- `make test` - Runs full test suite
+- `make analyze` - Generates performance analysis
+- `make run-receiver` - Starts UDP receiver
+- `make run-sender` - Runs single sender test
+
+### Running Individual Tests
+
 ```bash
-python3 scripts/analyze_results.py
+make run-sender PACKETS=1000 DROP_RATE=10 SIZE=1024
 ```
+
+Parameters:
+- PACKETS: Number of packets to send
+- DROP_RATE: Simulated packet loss rate (%)
+- SIZE: Packet size in bytes
 
 ## Test Configuration
 
-The `config/test_config.json` file controls test parameters:
-```json
-{
-    "packet_sizes": [1024, 4096],
-    "drop_rates": [0, 20, 30],
-    "test_duration": 60,
-    "optimization_levels": ["optimized", "unoptimized"]
-}
-```
+Edit `scripts/run_optimization_tests.sh` to modify:
+- Packet counts
+- Drop rates
+- Packet sizes
+- Test iterations
 
-## Test Categories
+## Results
 
-### 1. Optimization Tests
-- Compares optimized vs unoptimized performance
-- Tests different packet sizes and drop rates
-- Measures:
-  - RTT (Round Trip Time)
-  - Bandwidth
-  - Packet loss
-  - Initial drops
+Results are stored in `results/optimization_tests_<timestamp>/`:
+- CSV files containing metrics per test
+- Generated plots in PNG format
+- Performance summary
 
-### 2. Remote Tests
-- Tests performance across different network conditions
-- Supports remote host testing
-- Captures network latency and reliability metrics
+### Metrics Collected
 
-## Results Analysis
+- Round-trip time (RTT)
+- Packet loss rate
+- Bandwidth utilization
+- Number of dropped packets
+- Total packets sent/received
 
-Results are stored in timestamped directories under `results/`:
-- CSV files with raw performance data
-- PNG files with performance graphs
-- Summary statistics in `summary.csv`
+## Analysis
 
-### Generated Graphs
-The analysis generates visualizations for:
-- RTT vs Drop Rate
-- Bandwidth vs Packet Size
-- Initial Drops vs Drop Rate
-- Final Loss Rate vs Drop Rate
+The analysis script (`analyze_results.py`) generates:
+1. RTT vs Drop Rate comparison
+2. Bandwidth vs Packet Size analysis
+3. Packet Loss Analysis
+4. Optimization Performance Comparison
 
-## Performance Metrics
-- Average RTT (ms)
-- Bandwidth (MB/s)
-- Packet Loss Rate (%)
-- Initial Drop Count
-- Total Duration (s)
+## Contributing
 
-## Directory Structure Details
-
-### `/bin`
-Contains compiled executables:
-- `receiver`: UDP packet receiver
-- `sender`: UDP packet sender
-
-### `/cmd`
-Source code for the applications:
-- `receiver/main.go`: Receiver implementation
-- `sender/main.go`: Sender implementation
-
-### `/performance`
-Core performance measurement code:
-- `metrics.go`: Performance metric collection
-- `test_runner.go`: Test execution framework
-
-### `/scripts`
-Test automation and analysis:
-- `analyze_results.py`: Basic analysis
-- `analyze_comprehensive.py`: Detailed analysis
-- `run_optimization_tests.sh`: Local testing script
-- `run_remote_tests.sh`: Remote testing script
-
-## Common Commands
-```bash
-# Clean build artifacts
-make clean
-
-# Run all tests
-make test
-
-# Generate analysis
-make analyze
-
-# Clean results
-make clean-results
-```
-
-## Notes
-- Ensure receiver is running before starting tests
-- Tests require Python 3.x with pandas, matplotlib, and seaborn
-- Results are automatically timestamped
-- Analysis includes both numerical and graphical results
+1. Follow Go and Python code formatting guidelines
+2. Add tests for new features
+3. Update documentation for significant changes

@@ -1,67 +1,72 @@
-.PHONY: all build clean test analyze build-sender build-receiver run-sender run-receiver
+# Makefile for UDP Performance Testing Framework
 
-# Default target
-all: build test analyze
+# Configuration
+GO := go
+PYTHON := python3
+BUILD_DIR := bin
+RESULTS_DIR := results
+SCRIPTS_DIR := scripts
 
-# Build binaries
-build: build-sender build-receiver
+# Default values for sender
+PACKETS ?= 1000
+DROP_RATE ?= 0
+SIZE ?= 1024
 
-build-sender:
-    go build -o bin/sender cmd/sender/main.go
+# Build targets
+.PHONY: all build clean test analyze run-receiver run-sender help
 
-build-receiver:
-    go build -o bin/receiver cmd/receiver/main.go
+all: build
 
-# Run components
-run-receiver:
-    ./bin/receiver
+build: prepare
+    @echo "Building UDP components..."
+    $(GO) build -o $(BUILD_DIR)/receiver ./reliable_udp/receiver.go
+    $(GO) build -o $(BUILD_DIR)/sender ./reliable_udp/sender.go
+    @echo "Build complete. Binaries in $(BUILD_DIR)/"
 
-run-sender:
-    ./bin/sender
+prepare:
+    @mkdir -p $(BUILD_DIR)
+    @mkdir -p $(RESULTS_DIR)
 
-# Run performance tests
-test:
-    chmod +x scripts/run_optimization_tests.sh
-    ./scripts/run_optimization_tests.sh
-
-# Run remote tests
-remote-test:
-    chmod +x scripts/run_remote_tests.sh
-    ./scripts/run_remote_tests.sh
-
-# Analyze results
-analyze:
-    python3 scripts/analyze_results.py
-    python3 scripts/analyze_comprehensive.py
-
-# Run comprehensive analysis
-analyze-comprehensive: analyze
-    mkdir -p results/analysis
-    mv *.png results/analysis/
-
-# Clean build artifacts and results
 clean:
-    rm -f bin/sender bin/receiver
-    rm -rf results/optimization_tests_*
-    rm -rf results/remote_results/*
+    @echo "Cleaning build artifacts..."
+    @rm -rf $(BUILD_DIR)
+    @echo "Do you want to clean results too? [y/N]"
+    @read ans && [ "$$ans" = "y" ] && rm -rf $(RESULTS_DIR)/* || true
 
-# Setup Python dependencies
-setup-python:
-    pip3 install pandas matplotlib seaborn
+test: build
+    @echo "Running performance tests..."
+    @cd $(SCRIPTS_DIR) && ./run_optimization_tests.sh
+    @echo "Tests complete. Results in $(RESULTS_DIR)/"
 
-# Help target
+analyze:
+    @echo "Analyzing test results..."
+    @cd $(SCRIPTS_DIR) && $(PYTHON) analyze_results.py
+    @echo "Analysis complete. Check $(RESULTS_DIR) for plots."
+
+run-receiver: build
+    @echo "Starting UDP receiver..."
+    @$(BUILD_DIR)/receiver
+
+run-sender: build
+    @if [ -z "$(PACKETS)" ]; then \
+        echo "Usage: make run-sender PACKETS=<count> DROP_RATE=<rate> SIZE=<size>"; \
+        exit 1; \
+    fi
+    @echo "Running sender with $(PACKETS) packets, $(DROP_RATE)% drop rate, $(SIZE) bytes..."
+    @$(BUILD_DIR)/sender $(PACKETS) $(DROP_RATE) $(SIZE)
+
 help:
-    @echo "Available targets:"
-    @echo "  all                - Build, test, and analyze"
-    @echo "  build              - Build sender and receiver"
-    @echo "  build-sender       - Build only sender"
-    @echo "  build-receiver     - Build only receiver"
-    @echo "  run-receiver       - Run the receiver"
-    @echo "  run-sender         - Run the sender"
-    @echo "  test               - Run optimization tests"
-    @echo "  remote-test        - Run remote tests"
-    @echo "  analyze            - Basic result analysis"
-    @echo "  analyze-comprehensive - Detailed analysis with graphs"
-    @echo "  clean              - Remove binaries and results"
-    @echo "  setup-python       - Install Python dependencies"
-
+    @echo "UDP Performance Testing Framework"
+    @echo ""
+    @echo "Available commands:"
+    @echo "  make build         - Build all components"
+    @echo "  make clean         - Remove built files"
+    @echo "  make test          - Run performance tests"
+    @echo "  make analyze       - Generate performance analysis"
+    @echo "  make run-receiver  - Start UDP receiver"
+    @echo "  make run-sender    - Run sender test"
+    @echo ""
+    @echo "Sender parameters:"
+    @echo "  PACKETS=1000      - Number of packets"
+    @echo "  DROP_RATE=0       - Packet loss rate (%)"
+    @echo "  SIZE=1024         - Packet size (bytes)"

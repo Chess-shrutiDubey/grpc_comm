@@ -1,0 +1,11 @@
+optimization,drop_rate,avg_rtt,bandwidth,dropped_packets,packet_loss
+optimized,0,0.308,2.19,0.0,0.0
+optimized,10,0.389,0.295,92.75,10.31
+optimized,20,0.464,0.162,165.75,20.51
+optimized,30,0.502,0.111,204.75,29.632
+optimized,40,0.469,0.085,245.0,40.69
+unoptimized,0,0.298,2.198,0.0,0.0
+unoptimized,10,0.416,0.302,92.5,10.343
+unoptimized,20,0.46,0.172,150.75,19.07
+unoptimized,30,0.451,0.117,203.5,29.25
+unoptimized,40,0.508,0.086,238.0,40.308
