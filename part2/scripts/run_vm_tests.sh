@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Configuration
-RECEIVER_VM_IP="192.168.56.101"  # Change this to your receiver VM's IP
+RECEIVER_VM_IP="10.0.2.15"  # Change this to your receiver VM's IP
 PACKET_COUNT=1000
 DROP_RATES=(0 10 20 30 40)
 PACKET_SIZES=(1024 2048 4096 8192)
@@ -27,28 +27,34 @@ check_receiver() {
 # Function to start receiver on remote VM
 start_remote_receiver() {
     local drop_rate=$1
-    ssh ubuntu@${RECEIVER_VM_IP} "cd ${BASE_DIR} && ./bin/receiver ${drop_rate}" &
+    ssh nvn@${RECEIVER_VM_IP} "cd ${BASE_DIR} && ./bin/receiver ${drop_rate}" &
     sleep 2
 }
 
 # Function to stop receiver on remote VM
 stop_remote_receiver() {
-    ssh ubuntu@${RECEIVER_VM_IP} "pkill receiver" || true
+    ssh nvn@${RECEIVER_VM_IP} "pkill receiver" || true
     sleep 1
 }
 
 # Verify connectivity
 check_receiver
 
+# Change to base directory
+cd "${BASE_DIR}"
+echo "Working directory: $(pwd)"
+
 # Run tests with and without optimization
 for opt in "normal" "disabled"; do
     if [ "$opt" == "normal" ]; then
-        go build -o bin/sender ./cmd/sender
-        ssh ubuntu@${RECEIVER_VM_IP} "cd ${BASE_DIR} && go build -o bin/receiver ./cmd/receiver"
+        echo "Building optimized binaries..."
+        cd "${BASE_DIR}" && go build -o bin/sender ./cmd/sender
+        ssh nvn@${RECEIVER_VM_IP} "cd ${BASE_DIR} && go build -o bin/receiver ./cmd/receiver"
         OPT_NAME="optimized"
     else
-        go build -gcflags="-N -l" -o bin/sender ./cmd/sender
-        ssh ubuntu@${RECEIVER_VM_IP} "cd ${BASE_DIR} && go build -gcflags='-N -l' -o bin/receiver ./cmd/receiver"
+        echo "Building unoptimized binaries..."
+        cd "${BASE_DIR}" && go build -gcflags="-N -l" -o bin/sender ./cmd/sender
+        ssh nvn@${RECEIVER_VM_IP} "cd ${BASE_DIR} && go build -gcflags='-N -l' -o bin/receiver ./cmd/receiver"
         OPT_NAME="unoptimized"
     fi
 
@@ -62,8 +68,8 @@ for opt in "normal" "disabled"; do
             # Start receiver on remote VM
             start_remote_receiver ${rate}
 
-            # Run sender locally
-            ./bin/sender ${PACKET_COUNT} ${rate} ${size} > "${OUT_FILE}" 2>&1
+            # Run sender locally (with explicit path)
+            cd "${BASE_DIR}" && ./bin/sender ${PACKET_COUNT} ${rate} ${size} > "${OUT_FILE}" 2>&1
             
             # Verify output
             if [ ! -s "${OUT_FILE}" ]; then
