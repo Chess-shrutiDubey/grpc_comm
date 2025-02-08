@@ -1,0 +1,39 @@
+syntax = "proto3";
+
+package performance;
+
+option go_package = "grpc_comm/part3/pkg/generated";
+
+// Performance testing service
+service PerformanceTest {
+    // Simple RPC for RTT testing
+    rpc SimpleRPC (Message) returns (Message) {}
+    
+    // Streaming for bandwidth testing
+    rpc StreamData (stream Message) returns (stream Message) {}
+    
+    // Server streaming
+    rpc ServerStream (Message) returns (stream Message) {}
+    
+    // Client streaming
+    rpc ClientStream (stream Message) returns (Message) {}
+}
+
+// Message type for all RPCs
+message Message {
+    oneof payload {
+        int64 int_value = 1;
+        double double_value = 2;
+        string string_value = 3;
+        ComplexStructure complex_value = 4;
+    }
+    int64 sequence_number = 5;
+    int64 timestamp = 6;
+}
+
+// Complex structure for testing serialization overhead
+message ComplexStructure {
+    repeated string strings = 1;
+    map<string, double> values = 2;
+    bytes data = 3;
+}

@@ -1,0 +1,6 @@
+optimization,drop_rate,avg_rtt,bandwidth,initial_drops,final_loss
+optimized,0,5.513,0.012,49.0,0.0
+optimized,20,25.124,0.003,240.5,0.05
+optimized,30,40.954,0.002,401.0,0.2
+unoptimized,20,25.406,0.003,242.0,0.0
+unoptimized,30,44.008,0.002,427.0,0.1

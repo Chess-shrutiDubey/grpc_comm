@@ -1,0 +1,1255 @@
+Testing RTT with small message...
+RTT for small message: 900.18µs
+
+Measuring bandwidth with 1000 packets...
+Packet 0 sent successfully, RTT: 624.855µs
+Retry 1: packet 3 (size: 99 bytes)
+Retry 2: packet 3 (size: 99 bytes)
+Packet 1 sent successfully, RTT: 205.707618ms
+Packet 2 sent successfully, RTT: 706.263µs
+Packet 3 sent successfully, RTT: 692.062µs
+Packet 4 sent successfully, RTT: 621.455µs
+Packet 5 sent successfully, RTT: 701.962µs
+Retry 1: packet 8 (size: 99 bytes)
+Retry 2: packet 8 (size: 99 bytes)
+Retry 3: packet 8 (size: 99 bytes)
+Packet 6 sent successfully, RTT: 307.80856ms
+Packet 7 sent successfully, RTT: 705.662µs
+Retry 1: packet 10 (size: 99 bytes)
+Packet 8 sent successfully, RTT: 103.460663ms
+Packet 9 sent successfully, RTT: 706.563µs
+Packet 10 sent successfully, RTT: 784.769µs
+Packet 11 sent successfully, RTT: 708.062µs
+Packet 12 sent successfully, RTT: 696.761µs
+Packet 13 sent successfully, RTT: 694.062µs
+Packet 14 sent successfully, RTT: 704.762µs
+Packet 15 sent successfully, RTT: 644.257µs
+Packet 16 sent successfully, RTT: 715.963µs
+Retry 1: packet 19 (size: 99 bytes)
+Packet 17 sent successfully, RTT: 103.268046ms
+Packet 18 sent successfully, RTT: 734.365µs
+Packet 19 sent successfully, RTT: 707.662µs
+Retry 1: packet 22 (size: 99 bytes)
+Packet 20 sent successfully, RTT: 103.20574ms
+Packet 21 sent successfully, RTT: 602.453µs
+Retry 1: packet 24 (size: 99 bytes)
+Packet 22 sent successfully, RTT: 102.332063ms
+Retry 1: packet 25 (size: 99 bytes)
+Packet 23 sent successfully, RTT: 102.361965ms
+Packet 24 sent successfully, RTT: 707.663µs
+Packet 25 sent successfully, RTT: 693.161µs
+Packet 26 sent successfully, RTT: 693.462µs
+Retry 1: packet 29 (size: 99 bytes)
+Packet 27 sent successfully, RTT: 102.241154ms
+Packet 28 sent successfully, RTT: 730.165µs
+Packet 29 sent successfully, RTT: 683.061µs
+Packet 30 sent successfully, RTT: 703.662µs
+Packet 31 sent successfully, RTT: 681.761µs
+Packet 32 sent successfully, RTT: 689.561µs
+Packet 33 sent successfully, RTT: 618.054µs
+Packet 34 sent successfully, RTT: 691.261µs
+Retry 1: packet 37 (size: 99 bytes)
+Packet 35 sent successfully, RTT: 102.328563ms
+Packet 36 sent successfully, RTT: 717.264µs
+Retry 1: packet 39 (size: 99 bytes)
+Packet 37 sent successfully, RTT: 102.288359ms
+Packet 38 sent successfully, RTT: 794.37µs
+Packet 39 sent successfully, RTT: 645.957µs
+Packet 40 sent successfully, RTT: 883.078µs
+Packet 41 sent successfully, RTT: 633.456µs
+Retry 1: packet 44 (size: 99 bytes)
+Packet 42 sent successfully, RTT: 103.190639ms
+Packet 43 sent successfully, RTT: 685.06µs
+Retry 1: packet 46 (size: 99 bytes)
+Packet 44 sent successfully, RTT: 101.208863ms
+Packet 45 sent successfully, RTT: 357.532µs
+Packet 46 sent successfully, RTT: 350.931µs
+Retry 1: packet 49 (size: 99 bytes)
+Packet 47 sent successfully, RTT: 102.911914ms
+Retry 1: packet 50 (size: 99 bytes)
+Packet 48 sent successfully, RTT: 103.213241ms
+Packet 49 sent successfully, RTT: 924.181µs
+Packet 50 sent successfully, RTT: 597.253µs
+Packet 51 sent successfully, RTT: 727.265µs
+Packet 52 sent successfully, RTT: 624.055µs
+Retry 1: packet 55 (size: 99 bytes)
+Retry 2: packet 55 (size: 99 bytes)
+Packet 53 sent successfully, RTT: 205.525302ms
+Packet 54 sent successfully, RTT: 700.462µs
+Packet 55 sent successfully, RTT: 696.262µs
+Packet 56 sent successfully, RTT: 696.762µs
+Retry 1: packet 59 (size: 99 bytes)
+Packet 57 sent successfully, RTT: 103.476765ms
+Packet 58 sent successfully, RTT: 633.356µs
+Packet 59 sent successfully, RTT: 621.856µs
+Packet 60 sent successfully, RTT: 643.257µs
+Packet 61 sent successfully, RTT: 652.058µs
+Packet 62 sent successfully, RTT: 612.755µs
+Packet 63 sent successfully, RTT: 673.959µs
+Packet 64 sent successfully, RTT: 617.355µs
+Packet 65 sent successfully, RTT: 812.372µs
+Packet 66 sent successfully, RTT: 742.165µs
+Packet 67 sent successfully, RTT: 921.582µs
+Packet 68 sent successfully, RTT: 787.57µs
+Packet 69 sent successfully, RTT: 731.664µs
+Retry 1: packet 72 (size: 99 bytes)
+Packet 70 sent successfully, RTT: 103.42516ms
+Packet 71 sent successfully, RTT: 693.161µs
+Packet 72 sent successfully, RTT: 703.862µs
+Retry 1: packet 75 (size: 99 bytes)
+Packet 73 sent successfully, RTT: 103.598675ms
+Packet 74 sent successfully, RTT: 907.98µs
+Packet 75 sent successfully, RTT: 725.864µs
+Packet 76 sent successfully, RTT: 701.862µs
+Packet 77 sent successfully, RTT: 832.473µs
+Packet 78 sent successfully, RTT: 811.772µs
+Packet 79 sent successfully, RTT: 830.673µs
+Packet 80 sent successfully, RTT: 746.366µs
+Packet 81 sent successfully, RTT: 701.462µs
+Packet 82 sent successfully, RTT: 712.163µs
+Packet 83 sent successfully, RTT: 845.374µs
+Packet 84 sent successfully, RTT: 744.766µs
+Packet 85 sent successfully, RTT: 866.877µs
+Retry 1: packet 88 (size: 99 bytes)
+Packet 86 sent successfully, RTT: 103.398958ms
+Packet 87 sent successfully, RTT: 733.865µs
+Packet 88 sent successfully, RTT: 823.373µs
+Retry 1: packet 91 (size: 99 bytes)
+Packet 89 sent successfully, RTT: 103.575173ms
+Packet 90 sent successfully, RTT: 835.974µs
+Packet 91 sent successfully, RTT: 815.872µs
+Packet 92 sent successfully, RTT: 867.877µs
+Retry 1: packet 95 (size: 99 bytes)
+Packet 93 sent successfully, RTT: 103.496566ms
+Packet 94 sent successfully, RTT: 820.272µs
+Packet 95 sent successfully, RTT: 728.564µs
+Retry 1: packet 98 (size: 99 bytes)
+Packet 96 sent successfully, RTT: 103.500266ms
+Packet 97 sent successfully, RTT: 823.673µs
+Packet 98 sent successfully, RTT: 818.173µs
+Packet 99 sent successfully, RTT: 815.273µs
+Packet 100 sent successfully, RTT: 736.765µs
+Retry 1: packet 103 (size: 99 bytes)
+Packet 101 sent successfully, RTT: 102.380267ms
+Packet 102 sent successfully, RTT: 709.563µs
+Retry 1: packet 105 (size: 99 bytes)
+Packet 103 sent successfully, RTT: 103.402657ms
+Packet 104 sent successfully, RTT: 839.274µs
+Retry 1: packet 107 (size: 99 bytes)
+Packet 105 sent successfully, RTT: 101.938627ms
+Retry 1: packet 108 (size: 99 bytes)
+Packet 106 sent successfully, RTT: 101.489888ms
+Packet 107 sent successfully, RTT: 365.232µs
+Packet 108 sent successfully, RTT: 384.534µs
+Packet 109 sent successfully, RTT: 383.634µs
+Packet 110 sent successfully, RTT: 385.634µs
+Retry 1: packet 113 (size: 99 bytes)
+Packet 111 sent successfully, RTT: 102.954918ms
+Packet 112 sent successfully, RTT: 651.958µs
+Packet 113 sent successfully, RTT: 537.547µs
+Packet 114 sent successfully, RTT: 508.345µs
+Retry 1: packet 117 (size: 99 bytes)
+Packet 115 sent successfully, RTT: 103.188839ms
+Packet 116 sent successfully, RTT: 700.762µs
+Packet 117 sent successfully, RTT: 854.676µs
+Packet 118 sent successfully, RTT: 734.165µs
+Retry 1: packet 121 (size: 99 bytes)
+Packet 119 sent successfully, RTT: 102.453773ms
+Packet 120 sent successfully, RTT: 693.662µs
+Packet 121 sent successfully, RTT: 676.86µs
+Packet 122 sent successfully, RTT: 1.031591ms
+Retry 1: packet 125 (size: 99 bytes)
+Packet 123 sent successfully, RTT: 103.535069ms
+Packet 124 sent successfully, RTT: 731.265µs
+Packet 125 sent successfully, RTT: 760.567µs
+Packet 126 sent successfully, RTT: 827.574µs
+Packet 127 sent successfully, RTT: 816.572µs
+Packet 128 sent successfully, RTT: 809.272µs
+Packet 129 sent successfully, RTT: 725.764µs
+Packet 130 sent successfully, RTT: 805.271µs
+Packet 131 sent successfully, RTT: 734.765µs
+Packet 132 sent successfully, RTT: 794.47µs
+Packet 133 sent successfully, RTT: 748.066µs
+Packet 134 sent successfully, RTT: 712.963µs
+Packet 135 sent successfully, RTT: 788.87µs
+Packet 136 sent successfully, RTT: 719.364µs
+Packet 137 sent successfully, RTT: 878.078µs
+Packet 138 sent successfully, RTT: 731.064µs
+Packet 139 sent successfully, RTT: 763.168µs
+Packet 140 sent successfully, RTT: 813.772µs
+Packet 141 sent successfully, RTT: 874.978µs
+Retry 1: packet 144 (size: 99 bytes)
+Retry 2: packet 144 (size: 99 bytes)
+Packet 142 sent successfully, RTT: 204.324195ms
+Retry 1: packet 145 (size: 99 bytes)
+Packet 143 sent successfully, RTT: 102.361866ms
+Packet 144 sent successfully, RTT: 888.679µs
+Packet 145 sent successfully, RTT: 820.172µs
+Packet 146 sent successfully, RTT: 822.473µs
+Packet 147 sent successfully, RTT: 765.368µs
+Packet 148 sent successfully, RTT: 735.765µs
+Packet 149 sent successfully, RTT: 811.872µs
+Retry 1: packet 152 (size: 99 bytes)
+Retry 2: packet 152 (size: 99 bytes)
+Packet 150 sent successfully, RTT: 205.596308ms
+Packet 151 sent successfully, RTT: 653.158µs
+Packet 152 sent successfully, RTT: 730.465µs
+Retry 1: packet 155 (size: 99 bytes)
+Packet 153 sent successfully, RTT: 103.395057ms
+Packet 154 sent successfully, RTT: 748.166µs
+Packet 155 sent successfully, RTT: 696.761µs
+Packet 156 sent successfully, RTT: 734.965µs
+Packet 157 sent successfully, RTT: 712.163µs
+Packet 158 sent successfully, RTT: 595.353µs
+Retry 1: packet 161 (size: 99 bytes)
+Packet 159 sent successfully, RTT: 101.788115ms
+Packet 160 sent successfully, RTT: 309.927µs
+Packet 161 sent successfully, RTT: 345.731µs
+Packet 162 sent successfully, RTT: 321.129µs
+Packet 163 sent successfully, RTT: 325.229µs
+Packet 164 sent successfully, RTT: 154.014µs
+Packet 165 sent successfully, RTT: 160.615µs
+Packet 166 sent successfully, RTT: 253.122µs
+Packet 167 sent successfully, RTT: 147.313µs
+Packet 168 sent successfully, RTT: 216.219µs
+Packet 169 sent successfully, RTT: 149.513µs
+Retry 1: packet 172 (size: 99 bytes)
+Packet 170 sent successfully, RTT: 101.815917ms
+Packet 171 sent successfully, RTT: 384.834µs
+Packet 172 sent successfully, RTT: 377.733µs
+Packet 173 sent successfully, RTT: 381.833µs
+Packet 174 sent successfully, RTT: 425.538µs
+Packet 175 sent successfully, RTT: 468.141µs
+Packet 176 sent successfully, RTT: 439.739µs
+Packet 177 sent successfully, RTT: 439.139µs
+Packet 178 sent successfully, RTT: 436.339µs
+Packet 179 sent successfully, RTT: 510.345µs
+Packet 180 sent successfully, RTT: 503.944µs
+Packet 181 sent successfully, RTT: 504.445µs
+Retry 1: packet 184 (size: 99 bytes)
+Packet 182 sent successfully, RTT: 103.282847ms
+Retry 1: packet 185 (size: 99 bytes)
+Packet 183 sent successfully, RTT: 102.557483ms
+Packet 184 sent successfully, RTT: 827.074µs
+Packet 185 sent successfully, RTT: 809.571µs
+Packet 186 sent successfully, RTT: 883.279µs
+Packet 187 sent successfully, RTT: 849.175µs
+Packet 188 sent successfully, RTT: 829.474µs
+Packet 189 sent successfully, RTT: 816.273µs
+Retry 1: packet 192 (size: 99 bytes)
+Packet 190 sent successfully, RTT: 103.09563ms
+Retry 1: packet 193 (size: 99 bytes)
+Packet 191 sent successfully, RTT: 102.691294ms
+Packet 192 sent successfully, RTT: 857.276µs
+Packet 193 sent successfully, RTT: 744.266µs
+Packet 194 sent successfully, RTT: 751.767µs
+Packet 195 sent successfully, RTT: 885.278µs
+Packet 196 sent successfully, RTT: 734.865µs
+Packet 197 sent successfully, RTT: 874.577µs
+Packet 198 sent successfully, RTT: 672.46µs
+Packet 199 sent successfully, RTT: 830.774µs
+Packet 200 sent successfully, RTT: 815.072µs
+Packet 201 sent successfully, RTT: 991.488µs
+Retry 1: packet 204 (size: 99 bytes)
+Packet 202 sent successfully, RTT: 103.383256ms
+Packet 203 sent successfully, RTT: 736.466µs
+Packet 204 sent successfully, RTT: 711.363µs
+Packet 205 sent successfully, RTT: 821.273µs
+Retry 1: packet 208 (size: 99 bytes)
+Retry 2: packet 208 (size: 99 bytes)
+Packet 206 sent successfully, RTT: 205.826728ms
+Packet 207 sent successfully, RTT: 849.175µs
+Packet 208 sent successfully, RTT: 813.272µs
+Packet 209 sent successfully, RTT: 804.771µs
+Packet 210 sent successfully, RTT: 721.564µs
+Packet 211 sent successfully, RTT: 803.571µs
+Packet 212 sent successfully, RTT: 819.272µs
+Packet 213 sent successfully, RTT: 821.272µs
+Packet 214 sent successfully, RTT: 821.773µs
+Packet 215 sent successfully, RTT: 817.772µs
+Retry 1: packet 218 (size: 99 bytes)
+Packet 216 sent successfully, RTT: 103.606475ms
+Packet 217 sent successfully, RTT: 886.779µs
+Packet 218 sent successfully, RTT: 814.372µs
+Packet 219 sent successfully, RTT: 812.472µs
+Retry 1: packet 222 (size: 99 bytes)
+Packet 220 sent successfully, RTT: 103.53417ms
+Retry 1: packet 223 (size: 99 bytes)
+Packet 221 sent successfully, RTT: 101.996133ms
+Packet 222 sent successfully, RTT: 154.113µs
+Packet 223 sent successfully, RTT: 192.317µs
+Retry 1: packet 226 (size: 99 bytes)
+Retry 2: packet 226 (size: 99 bytes)
+Packet 224 sent successfully, RTT: 204.346798ms
+Retry 1: packet 227 (size: 99 bytes)
+Packet 225 sent successfully, RTT: 101.749511ms
+Packet 226 sent successfully, RTT: 286.925µs
+Packet 227 sent successfully, RTT: 282.526µs
+Packet 228 sent successfully, RTT: 286.425µs
+Retry 1: packet 231 (size: 99 bytes)
+Packet 229 sent successfully, RTT: 102.634689ms
+Packet 230 sent successfully, RTT: 519.646µs
+Packet 231 sent successfully, RTT: 628.256µs
+Retry 1: packet 234 (size: 99 bytes)
+Packet 232 sent successfully, RTT: 102.568784ms
+Packet 233 sent successfully, RTT: 615.954µs
+Retry 1: packet 236 (size: 99 bytes)
+Packet 234 sent successfully, RTT: 103.363654ms
+Packet 235 sent successfully, RTT: 931.482µs
+Packet 236 sent successfully, RTT: 698.362µs
+Packet 237 sent successfully, RTT: 738.266µs
+Packet 238 sent successfully, RTT: 674.16µs
+Packet 239 sent successfully, RTT: 747.366µs
+Packet 240 sent successfully, RTT: 715.463µs
+Packet 241 sent successfully, RTT: 726.864µs
+Packet 242 sent successfully, RTT: 715.763µs
+Packet 243 sent successfully, RTT: 990.488µs
+Retry 1: packet 246 (size: 99 bytes)
+Packet 244 sent successfully, RTT: 101.833119ms
+Packet 245 sent successfully, RTT: 110.61µs
+Packet 246 sent successfully, RTT: 161.614µs
+Packet 247 sent successfully, RTT: 261.023µs
+Retry 1: packet 250 (size: 99 bytes)
+Packet 248 sent successfully, RTT: 102.130545ms
+Packet 249 sent successfully, RTT: 400.936µs
+Packet 250 sent successfully, RTT: 438.939µs
+Packet 251 sent successfully, RTT: 750.967µs
+Packet 252 sent successfully, RTT: 438.839µs
+Packet 253 sent successfully, RTT: 520.846µs
+Packet 254 sent successfully, RTT: 512.446µs
+Packet 255 sent successfully, RTT: 549.949µs
+Packet 256 sent successfully, RTT: 620.055µs
+Packet 257 sent successfully, RTT: 483.443µs
+Packet 258 sent successfully, RTT: 596.053µs
+Packet 259 sent successfully, RTT: 504.644µs
+Packet 260 sent successfully, RTT: 512.146µs
+Retry 1: packet 263 (size: 99 bytes)
+Packet 261 sent successfully, RTT: 103.496566ms
+Packet 262 sent successfully, RTT: 748.267µs
+Retry 1: packet 265 (size: 99 bytes)
+Packet 263 sent successfully, RTT: 102.398968ms
+Packet 264 sent successfully, RTT: 707.362µs
+Packet 265 sent successfully, RTT: 813.772µs
+Retry 1: packet 268 (size: 99 bytes)
+Packet 266 sent successfully, RTT: 103.602275ms
+Packet 267 sent successfully, RTT: 830.173µs
+Retry 1: packet 270 (size: 99 bytes)
+Retry 2: packet 270 (size: 99 bytes)
+Packet 268 sent successfully, RTT: 205.73132ms
+Packet 269 sent successfully, RTT: 689.761µs
+Retry 1: packet 272 (size: 99 bytes)
+Retry 2: packet 272 (size: 99 bytes)
+Packet 270 sent successfully, RTT: 205.906856ms
+Packet 271 sent successfully, RTT: 827.955µs
+Packet 272 sent successfully, RTT: 742.139µs
+Packet 273 sent successfully, RTT: 729.437µs
+Packet 274 sent successfully, RTT: 817.454µs
+Packet 275 sent successfully, RTT: 810.252µs
+Retry 1: packet 278 (size: 99 bytes)
+Retry 2: packet 278 (size: 99 bytes)
+Packet 276 sent successfully, RTT: 205.962964ms
+Packet 277 sent successfully, RTT: 740.638µs
+Packet 278 sent successfully, RTT: 818.253µs
+Packet 279 sent successfully, RTT: 734.438µs
+Packet 280 sent successfully, RTT: 858.961µs
+Packet 281 sent successfully, RTT: 704.432µs
+Retry 1: packet 284 (size: 99 bytes)
+Packet 282 sent successfully, RTT: 103.215525ms
+Packet 283 sent successfully, RTT: 861.161µs
+Packet 284 sent successfully, RTT: 811.652µs
+Packet 285 sent successfully, RTT: 709.232µs
+Packet 286 sent successfully, RTT: 713.234µs
+Packet 287 sent successfully, RTT: 806.951µs
+Packet 288 sent successfully, RTT: 751.841µs
+Packet 289 sent successfully, RTT: 641.72µs
+Packet 290 sent successfully, RTT: 723.436µs
+Packet 291 sent successfully, RTT: 839.557µs
+Packet 292 sent successfully, RTT: 816.653µs
+Packet 293 sent successfully, RTT: 840.658µs
+Packet 294 sent successfully, RTT: 727.137µs
+Packet 295 sent successfully, RTT: 813.952µs
+Packet 296 sent successfully, RTT: 816.452µs
+Retry 1: packet 299 (size: 99 bytes)
+Retry 2: packet 299 (size: 99 bytes)
+Packet 297 sent successfully, RTT: 206.531971ms
+Packet 298 sent successfully, RTT: 630.618µs
+Packet 299 sent successfully, RTT: 631.318µs
+Packet 300 sent successfully, RTT: 634.219µs
+Packet 301 sent successfully, RTT: 629.618µs
+Retry 1: packet 304 (size: 99 bytes)
+Packet 302 sent successfully, RTT: 101.772155ms
+Retry 1: packet 305 (size: 99 bytes)
+Packet 303 sent successfully, RTT: 101.927385ms
+Packet 304 sent successfully, RTT: 407.577µs
+Packet 305 sent successfully, RTT: 407.577µs
+Packet 306 sent successfully, RTT: 408.677µs
+Packet 307 sent successfully, RTT: 472.388µs
+Retry 1: packet 310 (size: 99 bytes)
+Packet 308 sent successfully, RTT: 102.131723ms
+Packet 309 sent successfully, RTT: 415.478µs
+Packet 310 sent successfully, RTT: 506.895µs
+Retry 1: packet 313 (size: 99 bytes)
+Packet 311 sent successfully, RTT: 103.006987ms
+Packet 312 sent successfully, RTT: 739.638µs
+Packet 313 sent successfully, RTT: 737.238µs
+Packet 314 sent successfully, RTT: 712.433µs
+Packet 315 sent successfully, RTT: 720.835µs
+Packet 316 sent successfully, RTT: 726.536µs
+Retry 1: packet 319 (size: 99 bytes)
+Packet 317 sent successfully, RTT: 103.556789ms
+Packet 318 sent successfully, RTT: 742.839µs
+Packet 319 sent successfully, RTT: 923.873µs
+Retry 1: packet 322 (size: 99 bytes)
+Packet 320 sent successfully, RTT: 101.707143ms
+Packet 321 sent successfully, RTT: 289.654µs
+Retry 1: packet 324 (size: 99 bytes)
+Packet 322 sent successfully, RTT: 102.97268ms
+Retry 1: packet 325 (size: 99 bytes)
+Retry 2: packet 325 (size: 99 bytes)
+Packet 323 sent successfully, RTT: 204.515192ms
+Packet 324 sent successfully, RTT: 492.892µs
+Packet 325 sent successfully, RTT: 493.293µs
+Retry 1: packet 328 (size: 99 bytes)
+Packet 326 sent successfully, RTT: 102.823152ms
+Retry 1: packet 329 (size: 99 bytes)
+Packet 327 sent successfully, RTT: 101.781857ms
+Retry 1: packet 330 (size: 99 bytes)
+Retry 2: packet 330 (size: 99 bytes)
+Retry 3: packet 330 (size: 99 bytes)
+Packet 328 sent successfully, RTT: 305.595318ms
+Retry 1: packet 331 (size: 99 bytes)
+Packet 329 sent successfully, RTT: 103.408961ms
+Packet 330 sent successfully, RTT: 1.142814ms
+Packet 331 sent successfully, RTT: 735.838µs
+Packet 332 sent successfully, RTT: 734.237µs
+Packet 333 sent successfully, RTT: 763.442µs
+Packet 334 sent successfully, RTT: 721.235µs
+Retry 1: packet 337 (size: 99 bytes)
+Packet 335 sent successfully, RTT: 103.436467ms
+Packet 336 sent successfully, RTT: 751.541µs
+Retry 1: packet 339 (size: 99 bytes)
+Packet 337 sent successfully, RTT: 103.410562ms
+Packet 338 sent successfully, RTT: 742.539µs
+Packet 339 sent successfully, RTT: 710.833µs
+Packet 340 sent successfully, RTT: 728.236µs
+Packet 341 sent successfully, RTT: 729.137µs
+Packet 342 sent successfully, RTT: 770.744µs
+Packet 343 sent successfully, RTT: 778.045µs
+Packet 344 sent successfully, RTT: 981.584µs
+Retry 1: packet 347 (size: 99 bytes)
+Packet 345 sent successfully, RTT: 114.385918ms
+Retry 1: packet 348 (size: 99 bytes)
+Packet 346 sent successfully, RTT: 103.437167ms
+Packet 347 sent successfully, RTT: 822.654µs
+Retry 1: packet 350 (size: 99 bytes)
+Packet 348 sent successfully, RTT: 101.590522ms
+Packet 349 sent successfully, RTT: 274.752µs
+Packet 350 sent successfully, RTT: 251.447µs
+Retry 1: packet 353 (size: 99 bytes)
+Packet 351 sent successfully, RTT: 100.936599ms
+Packet 352 sent successfully, RTT: 151.829µs
+Packet 353 sent successfully, RTT: 139.726µs
+Packet 354 sent successfully, RTT: 375.171µs
+Packet 355 sent successfully, RTT: 122.923µs
+Packet 356 sent successfully, RTT: 119.922µs
+Retry 1: packet 359 (size: 99 bytes)
+Packet 357 sent successfully, RTT: 101.733348ms
+Packet 358 sent successfully, RTT: 396.674µs
+Packet 359 sent successfully, RTT: 390.773µs
+Packet 360 sent successfully, RTT: 637.92µs
+Packet 361 sent successfully, RTT: 479.09µs
+Packet 362 sent successfully, RTT: 354.567µs
+Retry 1: packet 365 (size: 99 bytes)
+Packet 363 sent successfully, RTT: 103.149513ms
+Packet 364 sent successfully, RTT: 807.451µs
+Packet 365 sent successfully, RTT: 832.656µs
+Packet 366 sent successfully, RTT: 695.43µs
+Packet 367 sent successfully, RTT: 766.243µs
+Packet 368 sent successfully, RTT: 720.035µs
+Packet 369 sent successfully, RTT: 723.135µs
+Packet 370 sent successfully, RTT: 811.252µs
+Packet 371 sent successfully, RTT: 722.436µs
+Packet 372 sent successfully, RTT: 664.124µs
+Packet 373 sent successfully, RTT: 731.037µs
+Packet 374 sent successfully, RTT: 831.655µs
+Packet 375 sent successfully, RTT: 726.336µs
+Packet 376 sent successfully, RTT: 856.361µs
+Packet 377 sent successfully, RTT: 1.0716ms
+Packet 378 sent successfully, RTT: 803.05µs
+Packet 379 sent successfully, RTT: 787.947µs
+Packet 380 sent successfully, RTT: 717.335µs
+Packet 381 sent successfully, RTT: 684.929µs
+Packet 382 sent successfully, RTT: 753.341µs
+Packet 383 sent successfully, RTT: 727.536µs
+Retry 1: packet 386 (size: 99 bytes)
+Packet 384 sent successfully, RTT: 103.297141ms
+Packet 385 sent successfully, RTT: 661.724µs
+Retry 1: packet 388 (size: 99 bytes)
+Packet 386 sent successfully, RTT: 103.485776ms
+Packet 387 sent successfully, RTT: 699.731µs
+Packet 388 sent successfully, RTT: 724.935µs
+Packet 389 sent successfully, RTT: 674.926µs
+Packet 390 sent successfully, RTT: 738.038µs
+Retry 1: packet 393 (size: 99 bytes)
+Packet 391 sent successfully, RTT: 103.672111ms
+Retry 1: packet 394 (size: 99 bytes)
+Retry 2: packet 394 (size: 99 bytes)
+Packet 392 sent successfully, RTT: 206.128794ms
+Packet 393 sent successfully, RTT: 797.149µs
+Retry 1: packet 396 (size: 99 bytes)
+Packet 394 sent successfully, RTT: 102.510694ms
+Packet 395 sent successfully, RTT: 828.155µs
+Packet 396 sent successfully, RTT: 817.053µs
+Packet 397 sent successfully, RTT: 798.449µs
+Packet 398 sent successfully, RTT: 824.654µs
+Packet 399 sent successfully, RTT: 818.453µs
+Packet 400 sent successfully, RTT: 869.463µs
+Packet 401 sent successfully, RTT: 813.252µs
+Packet 402 sent successfully, RTT: 851.86µs
+Packet 403 sent successfully, RTT: 838.057µs
+Retry 1: packet 406 (size: 99 bytes)
+Packet 404 sent successfully, RTT: 103.397359ms
+Packet 405 sent successfully, RTT: 676.227µs
+Packet 406 sent successfully, RTT: 547.002µs
+Packet 407 sent successfully, RTT: 524.998µs
+Packet 408 sent successfully, RTT: 545.203µs
+Packet 409 sent successfully, RTT: 396.475µs
+Packet 410 sent successfully, RTT: 419.279µs
+Retry 1: packet 413 (size: 99 bytes)
+Packet 411 sent successfully, RTT: 101.775156ms
+Packet 412 sent successfully, RTT: 455.685µs
+Retry 1: packet 415 (size: 99 bytes)
+Packet 413 sent successfully, RTT: 102.17023ms
+Packet 414 sent successfully, RTT: 811.752µs
+Packet 415 sent successfully, RTT: 802.45µs
+Packet 416 sent successfully, RTT: 811.152µs
+Packet 417 sent successfully, RTT: 710.233µs
+Packet 418 sent successfully, RTT: 817.853µs
+Packet 419 sent successfully, RTT: 846.558µs
+Retry 1: packet 422 (size: 99 bytes)
+Packet 420 sent successfully, RTT: 102.454583ms
+Packet 421 sent successfully, RTT: 949.878µs
+Packet 422 sent successfully, RTT: 818.953µs
+Packet 423 sent successfully, RTT: 879.965µs
+Retry 1: packet 426 (size: 99 bytes)
+Packet 424 sent successfully, RTT: 102.584507ms
+Packet 425 sent successfully, RTT: 672.125µs
+Packet 426 sent successfully, RTT: 815.853µs
+Packet 427 sent successfully, RTT: 725.136µs
+Packet 428 sent successfully, RTT: 811.952µs
+Packet 429 sent successfully, RTT: 748.841µs
+Retry 1: packet 432 (size: 99 bytes)
+Packet 430 sent successfully, RTT: 103.435466ms
+Packet 431 sent successfully, RTT: 423.279µs
+Packet 432 sent successfully, RTT: 792.448µs
+Retry 1: packet 435 (size: 99 bytes)
+Retry 2: packet 435 (size: 99 bytes)
+Packet 433 sent successfully, RTT: 205.83964ms
+Packet 434 sent successfully, RTT: 729.137µs
+Retry 1: packet 437 (size: 99 bytes)
+Packet 435 sent successfully, RTT: 103.435667ms
+Packet 436 sent successfully, RTT: 864.461µs
+Packet 437 sent successfully, RTT: 819.253µs
+Retry 1: packet 440 (size: 99 bytes)
+Retry 2: packet 440 (size: 99 bytes)
+Packet 438 sent successfully, RTT: 204.742435ms
+Packet 439 sent successfully, RTT: 837.157µs
+Retry 1: packet 442 (size: 99 bytes)
+Packet 440 sent successfully, RTT: 103.514982ms
+Packet 441 sent successfully, RTT: 831.456µs
+Retry 1: packet 444 (size: 99 bytes)
+Packet 442 sent successfully, RTT: 103.13201ms
+Packet 443 sent successfully, RTT: 732.637µs
+Retry 1: packet 446 (size: 99 bytes)
+Packet 444 sent successfully, RTT: 103.362353ms
+Packet 445 sent successfully, RTT: 731.337µs
+Packet 446 sent successfully, RTT: 710.433µs
+Packet 447 sent successfully, RTT: 682.527µs
+Packet 448 sent successfully, RTT: 674.627µs
+Retry 1: packet 451 (size: 99 bytes)
+Packet 449 sent successfully, RTT: 103.363653ms
+Packet 450 sent successfully, RTT: 721.235µs
+Packet 451 sent successfully, RTT: 696.531µs
+Packet 452 sent successfully, RTT: 829.955µs
+Packet 453 sent successfully, RTT: 852.259µs
+Packet 454 sent successfully, RTT: 766.144µs
+Packet 455 sent successfully, RTT: 777.446µs
+Packet 456 sent successfully, RTT: 779.146µs
+Packet 457 sent successfully, RTT: 807.451µs
+Packet 458 sent successfully, RTT: 747.24µs
+Packet 459 sent successfully, RTT: 685.529µs
+Packet 460 sent successfully, RTT: 690.729µs
+Packet 461 sent successfully, RTT: 543.502µs
+Packet 462 sent successfully, RTT: 751.041µs
+Packet 463 sent successfully, RTT: 714.134µs
+Packet 464 sent successfully, RTT: 659.723µs
+Packet 465 sent successfully, RTT: 662.624µs
+Retry 1: packet 468 (size: 99 bytes)
+Retry 2: packet 468 (size: 99 bytes)
+Packet 466 sent successfully, RTT: 205.94166ms
+Packet 467 sent successfully, RTT: 826.455µs
+Packet 468 sent successfully, RTT: 994.086µs
+Retry 1: packet 471 (size: 99 bytes)
+Packet 469 sent successfully, RTT: 103.576394ms
+Packet 470 sent successfully, RTT: 665.025µs
+Packet 471 sent successfully, RTT: 829.055µs
+Packet 472 sent successfully, RTT: 969.381µs
+Retry 1: packet 475 (size: 99 bytes)
+Packet 473 sent successfully, RTT: 102.984382ms
+Packet 474 sent successfully, RTT: 736.838µs
+Retry 1: packet 477 (size: 99 bytes)
+Packet 475 sent successfully, RTT: 103.805036ms
+Packet 476 sent successfully, RTT: 853.16µs
+Packet 477 sent successfully, RTT: 959.58µs
+Packet 478 sent successfully, RTT: 721.335µs
+Packet 479 sent successfully, RTT: 746.139µs
+Retry 1: packet 482 (size: 99 bytes)
+Packet 480 sent successfully, RTT: 103.50588ms
+Retry 1: packet 483 (size: 99 bytes)
+Packet 481 sent successfully, RTT: 102.494691ms
+Packet 482 sent successfully, RTT: 836.157µs
+Packet 483 sent successfully, RTT: 822.654µs
+Packet 484 sent successfully, RTT: 846.458µs
+Retry 1: packet 487 (size: 99 bytes)
+Retry 2: packet 487 (size: 99 bytes)
+Packet 485 sent successfully, RTT: 205.638903ms
+Packet 486 sent successfully, RTT: 741.039µs
+Packet 487 sent successfully, RTT: 714.933µs
+Packet 488 sent successfully, RTT: 738.539µs
+Packet 489 sent successfully, RTT: 663.725µs
+Packet 490 sent successfully, RTT: 733.738µs
+Retry 1: packet 493 (size: 99 bytes)
+Packet 491 sent successfully, RTT: 103.18432ms
+Packet 492 sent successfully, RTT: 829.155µs
+Retry 1: packet 495 (size: 99 bytes)
+Packet 493 sent successfully, RTT: 103.470773ms
+Retry 1: packet 496 (size: 99 bytes)
+Packet 494 sent successfully, RTT: 103.487477ms
+Packet 495 sent successfully, RTT: 814.252µs
+Packet 496 sent successfully, RTT: 822.554µs
+Packet 497 sent successfully, RTT: 847.258µs
+Packet 498 sent successfully, RTT: 746.54µs
+Packet 499 sent successfully, RTT: 791.048µs
+Packet 500 sent successfully, RTT: 734.537µs
+Packet 501 sent successfully, RTT: 656.523µs
+Packet 502 sent successfully, RTT: 698.331µs
+Packet 503 sent successfully, RTT: 716.734µs
+Packet 504 sent successfully, RTT: 731.237µs
+Packet 505 sent successfully, RTT: 973.182µs
+Packet 506 sent successfully, RTT: 733.438µs
+Retry 1: packet 509 (size: 99 bytes)
+Packet 507 sent successfully, RTT: 103.254268ms
+Packet 508 sent successfully, RTT: 754.897µs
+Packet 509 sent successfully, RTT: 728.493µs
+Packet 510 sent successfully, RTT: 870.111µs
+Packet 511 sent successfully, RTT: 741.194µs
+Packet 512 sent successfully, RTT: 735.294µs
+Packet 513 sent successfully, RTT: 715.291µs
+Retry 1: packet 516 (size: 99 bytes)
+Packet 514 sent successfully, RTT: 103.600305ms
+Packet 515 sent successfully, RTT: 825.706µs
+Packet 516 sent successfully, RTT: 853.409µs
+Packet 517 sent successfully, RTT: 814.104µs
+Retry 1: packet 520 (size: 99 bytes)
+Packet 518 sent successfully, RTT: 102.683988ms
+Packet 519 sent successfully, RTT: 664.785µs
+Packet 520 sent successfully, RTT: 726.793µs
+Packet 521 sent successfully, RTT: 719.291µs
+Packet 522 sent successfully, RTT: 822.805µs
+Packet 523 sent successfully, RTT: 701.489µs
+Retry 1: packet 526 (size: 99 bytes)
+Packet 524 sent successfully, RTT: 103.08774ms
+Packet 525 sent successfully, RTT: 743.395µs
+Packet 526 sent successfully, RTT: 802.302µs
+Packet 527 sent successfully, RTT: 842.108µs
+Packet 528 sent successfully, RTT: 780.599µs
+Packet 529 sent successfully, RTT: 834.807µs
+Packet 530 sent successfully, RTT: 822.105µs
+Retry 1: packet 533 (size: 99 bytes)
+Packet 531 sent successfully, RTT: 102.426555ms
+Packet 532 sent successfully, RTT: 748.395µs
+Packet 533 sent successfully, RTT: 704.989µs
+Packet 534 sent successfully, RTT: 736.293µs
+Retry 1: packet 537 (size: 99 bytes)
+Retry 2: packet 537 (size: 99 bytes)
+Packet 535 sent successfully, RTT: 204.68769ms
+Packet 536 sent successfully, RTT: 671.586µs
+Packet 537 sent successfully, RTT: 715.291µs
+Packet 538 sent successfully, RTT: 700.289µs
+Packet 539 sent successfully, RTT: 724.892µs
+Packet 540 sent successfully, RTT: 706.79µs
+Packet 541 sent successfully, RTT: 666.285µs
+Packet 542 sent successfully, RTT: 814.004µs
+Retry 1: packet 545 (size: 99 bytes)
+Packet 543 sent successfully, RTT: 103.40408ms
+Retry 1: packet 546 (size: 99 bytes)
+Packet 544 sent successfully, RTT: 103.321965ms
+Packet 545 sent successfully, RTT: 826.12µs
+Packet 546 sent successfully, RTT: 842.522µs
+Packet 547 sent successfully, RTT: 813.518µs
+Retry 1: packet 550 (size: 99 bytes)
+Packet 548 sent successfully, RTT: 103.231113ms
+Retry 1: packet 551 (size: 99 bytes)
+Packet 549 sent successfully, RTT: 103.541057ms
+Retry 1: packet 552 (size: 99 bytes)
+Packet 550 sent successfully, RTT: 103.536257ms
+Packet 551 sent successfully, RTT: 848.123µs
+Packet 552 sent successfully, RTT: 723.005µs
+Packet 553 sent successfully, RTT: 697.901µs
+Retry 1: packet 556 (size: 99 bytes)
+Packet 554 sent successfully, RTT: 102.433296ms
+Retry 1: packet 557 (size: 99 bytes)
+Packet 555 sent successfully, RTT: 103.618569ms
+Packet 556 sent successfully, RTT: 697.501µs
+Packet 557 sent successfully, RTT: 719.105µs
+Packet 558 sent successfully, RTT: 883.128µs
+Packet 559 sent successfully, RTT: 814.719µs
+Packet 560 sent successfully, RTT: 861.626µs
+Retry 1: packet 563 (size: 99 bytes)
+Packet 561 sent successfully, RTT: 103.316325ms
+Packet 562 sent successfully, RTT: 738.308µs
+Packet 563 sent successfully, RTT: 715.504µs
+Packet 564 sent successfully, RTT: 685.9µs
+Packet 565 sent successfully, RTT: 683.799µs
+Packet 566 sent successfully, RTT: 831.221µs
+Packet 567 sent successfully, RTT: 775.212µs
+Packet 568 sent successfully, RTT: 731.706µs
+Packet 569 sent successfully, RTT: 740.608µs
+Packet 570 sent successfully, RTT: 672.298µs
+Packet 571 sent successfully, RTT: 725.806µs
+Packet 572 sent successfully, RTT: 732.407µs
+Packet 573 sent successfully, RTT: 950.239µs
+Packet 574 sent successfully, RTT: 756.11µs
+Packet 575 sent successfully, RTT: 727.606µs
+Packet 576 sent successfully, RTT: 710.303µs
+Packet 577 sent successfully, RTT: 804.717µs
+Retry 1: packet 580 (size: 99 bytes)
+Packet 578 sent successfully, RTT: 103.567861ms
+Packet 579 sent successfully, RTT: 759.81µs
+Packet 580 sent successfully, RTT: 835.122µs
+Retry 1: packet 583 (size: 99 bytes)
+Packet 581 sent successfully, RTT: 103.564161ms
+Packet 582 sent successfully, RTT: 806.317µs
+Packet 583 sent successfully, RTT: 916.134µs
+Packet 584 sent successfully, RTT: 826.12µs
+Packet 585 sent successfully, RTT: 725.906µs
+Packet 586 sent successfully, RTT: 733.207µs
+Packet 587 sent successfully, RTT: 826.22µs
+Packet 588 sent successfully, RTT: 833.322µs
+Packet 589 sent successfully, RTT: 784.214µs
+Packet 590 sent successfully, RTT: 810.618µs
+Packet 591 sent successfully, RTT: 815.118µs
+Packet 592 sent successfully, RTT: 836.522µs
+Packet 593 sent successfully, RTT: 825.02µs
+Packet 594 sent successfully, RTT: 725.506µs
+Packet 595 sent successfully, RTT: 818.619µs
+Packet 596 sent successfully, RTT: 846.223µs
+Packet 597 sent successfully, RTT: 799.916µs
+Packet 598 sent successfully, RTT: 817.618µs
+Packet 599 sent successfully, RTT: 733.507µs
+Packet 600 sent successfully, RTT: 818.519µs
+Packet 601 sent successfully, RTT: 819.919µs
+Packet 602 sent successfully, RTT: 838.822µs
+Packet 603 sent successfully, RTT: 716.504µs
+Packet 604 sent successfully, RTT: 720.605µs
+Packet 605 sent successfully, RTT: 942.937µs
+Retry 1: packet 608 (size: 99 bytes)
+Packet 606 sent successfully, RTT: 103.360131ms
+Packet 607 sent successfully, RTT: 870.626µs
+Packet 608 sent successfully, RTT: 804.817µs
+Packet 609 sent successfully, RTT: 1.02895ms
+Packet 610 sent successfully, RTT: 814.319µs
+Packet 611 sent successfully, RTT: 750.009µs
+Packet 612 sent successfully, RTT: 723.005µs
+Packet 613 sent successfully, RTT: 816.218µs
+Packet 614 sent successfully, RTT: 826.72µs
+Packet 615 sent successfully, RTT: 822.519µs
+Retry 1: packet 618 (size: 99 bytes)
+Packet 616 sent successfully, RTT: 103.340428ms
+Packet 617 sent successfully, RTT: 726.006µs
+Packet 618 sent successfully, RTT: 688.4µs
+Packet 619 sent successfully, RTT: 735.507µs
+Packet 620 sent successfully, RTT: 647.794µs
+Packet 621 sent successfully, RTT: 630.491µs
+Packet 622 sent successfully, RTT: 663.696µs
+Packet 623 sent successfully, RTT: 754.51µs
+Retry 1: packet 626 (size: 99 bytes)
+Packet 624 sent successfully, RTT: 101.605176ms
+Packet 625 sent successfully, RTT: 258.438µs
+Packet 626 sent successfully, RTT: 259.938µs
+Packet 627 sent successfully, RTT: 250.636µs
+Packet 628 sent successfully, RTT: 269.04µs
+Packet 629 sent successfully, RTT: 179.726µs
+Packet 630 sent successfully, RTT: 174.525µs
+Retry 1: packet 633 (size: 99 bytes)
+Packet 631 sent successfully, RTT: 103.230212ms
+Retry 1: packet 634 (size: 99 bytes)
+Retry 2: packet 634 (size: 99 bytes)
+Packet 632 sent successfully, RTT: 205.965252ms
+Packet 633 sent successfully, RTT: 816.619µs
+Packet 634 sent successfully, RTT: 844.223µs
+Packet 635 sent successfully, RTT: 1.139265ms
+Packet 636 sent successfully, RTT: 771.813µs
+Packet 637 sent successfully, RTT: 739.008µs
+Packet 638 sent successfully, RTT: 724.306µs
+Packet 639 sent successfully, RTT: 718.804µs
+Packet 640 sent successfully, RTT: 1.007147ms
+Packet 641 sent successfully, RTT: 678.799µs
+Retry 1: packet 644 (size: 99 bytes)
+Packet 642 sent successfully, RTT: 103.402037ms
+Packet 643 sent successfully, RTT: 742.908µs
+Packet 644 sent successfully, RTT: 749.309µs
+Packet 645 sent successfully, RTT: 657.296µs
+Packet 646 sent successfully, RTT: 705.703µs
+Retry 1: packet 649 (size: 99 bytes)
+Retry 2: packet 649 (size: 99 bytes)
+Packet 647 sent successfully, RTT: 205.452777ms
+Packet 648 sent successfully, RTT: 645.194µs
+Packet 649 sent successfully, RTT: 727.606µs
+Packet 650 sent successfully, RTT: 724.806µs
+Packet 651 sent successfully, RTT: 728.706µs
+Retry 1: packet 654 (size: 99 bytes)
+Packet 652 sent successfully, RTT: 103.49145ms
+Retry 1: packet 655 (size: 99 bytes)
+Packet 653 sent successfully, RTT: 101.046194ms
+Retry 1: packet 656 (size: 99 bytes)
+Packet 654 sent successfully, RTT: 101.064297ms
+Packet 655 sent successfully, RTT: 75.711µs
+Packet 656 sent successfully, RTT: 149.321µs
+Packet 657 sent successfully, RTT: 199.729µs
+Packet 658 sent successfully, RTT: 97.214µs
+Packet 659 sent successfully, RTT: 101.915µs
+Packet 660 sent successfully, RTT: 170.425µs
+Packet 661 sent successfully, RTT: 146.521µs
+Retry 1: packet 664 (size: 99 bytes)
+Packet 662 sent successfully, RTT: 100.987586ms
+Packet 663 sent successfully, RTT: 137.319µs
+Packet 664 sent successfully, RTT: 145.221µs
+Packet 665 sent successfully, RTT: 121.818µs
+Retry 1: packet 668 (size: 99 bytes)
+Packet 666 sent successfully, RTT: 100.918776ms
+Packet 667 sent successfully, RTT: 137.32µs
+Retry 1: packet 670 (size: 99 bytes)
+Packet 668 sent successfully, RTT: 101.0815ms
+Retry 1: packet 671 (size: 99 bytes)
+Packet 669 sent successfully, RTT: 102.993878ms
+Packet 670 sent successfully, RTT: 758.91µs
+Packet 671 sent successfully, RTT: 813.119µs
+Packet 672 sent successfully, RTT: 816.519µs
+Packet 673 sent successfully, RTT: 833.321µs
+Packet 674 sent successfully, RTT: 826.22µs
+Packet 675 sent successfully, RTT: 804.217µs
+Packet 676 sent successfully, RTT: 740.608µs
+Packet 677 sent successfully, RTT: 726.306µs
+Retry 1: packet 680 (size: 99 bytes)
+Packet 678 sent successfully, RTT: 103.324826ms
+Packet 679 sent successfully, RTT: 731.606µs
+Retry 1: packet 682 (size: 99 bytes)
+Packet 680 sent successfully, RTT: 103.400137ms
+Packet 681 sent successfully, RTT: 765.711µs
+Retry 1: packet 684 (size: 99 bytes)
+Packet 682 sent successfully, RTT: 103.461745ms
+Retry 1: packet 685 (size: 99 bytes)
+Packet 683 sent successfully, RTT: 103.55546ms
+Packet 684 sent successfully, RTT: 859.325µs
+Packet 685 sent successfully, RTT: 744.108µs
+Retry 1: packet 688 (size: 99 bytes)
+Packet 686 sent successfully, RTT: 103.358931ms
+Packet 687 sent successfully, RTT: 749.109µs
+Retry 1: packet 690 (size: 99 bytes)
+Retry 2: packet 690 (size: 99 bytes)
+Packet 688 sent successfully, RTT: 204.702969ms
+Packet 689 sent successfully, RTT: 825.52µs
+Retry 1: packet 692 (size: 99 bytes)
+Packet 690 sent successfully, RTT: 102.440697ms
+Packet 691 sent successfully, RTT: 710.304µs
+Packet 692 sent successfully, RTT: 726.506µs
+Packet 693 sent successfully, RTT: 667.697µs
+Packet 694 sent successfully, RTT: 726.306µs
+Packet 695 sent successfully, RTT: 725.905µs
+Packet 696 sent successfully, RTT: 722.805µs
+Packet 697 sent successfully, RTT: 727.406µs
+Packet 698 sent successfully, RTT: 742.908µs
+Packet 699 sent successfully, RTT: 732.106µs
+Retry 1: packet 702 (size: 99 bytes)
+Packet 700 sent successfully, RTT: 103.666076ms
+Packet 701 sent successfully, RTT: 750.71µs
+Retry 1: packet 704 (size: 99 bytes)
+Retry 2: packet 704 (size: 99 bytes)
+Packet 702 sent successfully, RTT: 205.683211ms
+Packet 703 sent successfully, RTT: 838.421µs
+Retry 1: packet 706 (size: 99 bytes)
+Packet 704 sent successfully, RTT: 103.577763ms
+Packet 705 sent successfully, RTT: 791.215µs
+Packet 706 sent successfully, RTT: 809.218µs
+Retry 1: packet 709 (size: 99 bytes)
+Packet 707 sent successfully, RTT: 103.41874ms
+Packet 708 sent successfully, RTT: 723.505µs
+Packet 709 sent successfully, RTT: 749.709µs
+Packet 710 sent successfully, RTT: 737.907µs
+Packet 711 sent successfully, RTT: 749.909µs
+Packet 712 sent successfully, RTT: 821.72µs
+Retry 1: packet 715 (size: 99 bytes)
+Packet 713 sent successfully, RTT: 102.650428ms
+Packet 714 sent successfully, RTT: 715.605µs
+Packet 715 sent successfully, RTT: 688.3µs
+Packet 716 sent successfully, RTT: 807.817µs
+Packet 717 sent successfully, RTT: 662.997µs
+Packet 718 sent successfully, RTT: 665.797µs
+Packet 719 sent successfully, RTT: 590.086µs
+Packet 720 sent successfully, RTT: 610.088µs
+Retry 1: packet 723 (size: 99 bytes)
+Packet 721 sent successfully, RTT: 101.98123ms
+Packet 722 sent successfully, RTT: 310.245µs
+Packet 723 sent successfully, RTT: 301.743µs
+Retry 1: packet 726 (size: 99 bytes)
+Packet 724 sent successfully, RTT: 102.441297ms
+Packet 725 sent successfully, RTT: 769.212µs
+Packet 726 sent successfully, RTT: 824.22µs
+Packet 727 sent successfully, RTT: 730.106µs
+Packet 728 sent successfully, RTT: 852.024µs
+Packet 729 sent successfully, RTT: 866.226µs
+Packet 730 sent successfully, RTT: 793.516µs
+Packet 731 sent successfully, RTT: 870.027µs
+Packet 732 sent successfully, RTT: 774.313µs
+Packet 733 sent successfully, RTT: 976.442µs
+Packet 734 sent successfully, RTT: 818.019µs
+Packet 735 sent successfully, RTT: 988.844µs
+Packet 736 sent successfully, RTT: 724.605µs
+Packet 737 sent successfully, RTT: 919.233µs
+Packet 738 sent successfully, RTT: 728.306µs
+Packet 739 sent successfully, RTT: 728.006µs
+Packet 740 sent successfully, RTT: 712.203µs
+Packet 741 sent successfully, RTT: 736.407µs
+Packet 742 sent successfully, RTT: 728.506µs
+Packet 743 sent successfully, RTT: 830.92µs
+Retry 1: packet 746 (size: 99 bytes)
+Packet 744 sent successfully, RTT: 103.21541ms
+Packet 745 sent successfully, RTT: 939.336µs
+Retry 1: packet 748 (size: 99 bytes)
+Retry 2: packet 748 (size: 99 bytes)
+Packet 746 sent successfully, RTT: 205.6053ms
+Packet 747 sent successfully, RTT: 849.824µs
+Retry 1: packet 750 (size: 99 bytes)
+Retry 2: packet 750 (size: 99 bytes)
+Retry 3: packet 750 (size: 99 bytes)
+Retry 4: packet 750 (size: 99 bytes)
+Packet 748 sent successfully, RTT: 409.469647ms
+Packet 749 sent successfully, RTT: 870.427µs
+Packet 750 sent successfully, RTT: 826.32µs
+Packet 751 sent successfully, RTT: 796.816µs
+Retry 1: packet 754 (size: 99 bytes)
+Packet 752 sent successfully, RTT: 103.338028ms
+Retry 1: packet 755 (size: 99 bytes)
+Packet 753 sent successfully, RTT: 103.577563ms
+Packet 754 sent successfully, RTT: 864.226µs
+Packet 755 sent successfully, RTT: 823.72µs
+Packet 756 sent successfully, RTT: 822.02µs
+Packet 757 sent successfully, RTT: 728.606µs
+Packet 758 sent successfully, RTT: 826.721µs
+Packet 759 sent successfully, RTT: 822.82µs
+Packet 760 sent successfully, RTT: 814.919µs
+Packet 761 sent successfully, RTT: 775.913µs
+Packet 762 sent successfully, RTT: 707.303µs
+Packet 763 sent successfully, RTT: 716.904µs
+Packet 764 sent successfully, RTT: 720.705µs
+Packet 765 sent successfully, RTT: 676.799µs
+Packet 766 sent successfully, RTT: 700.602µs
+Packet 767 sent successfully, RTT: 691.901µs
+Packet 768 sent successfully, RTT: 707.103µs
+Packet 769 sent successfully, RTT: 663.096µs
+Packet 770 sent successfully, RTT: 789.015µs
+Retry 1: packet 773 (size: 99 bytes)
+Retry 2: packet 773 (size: 99 bytes)
+Packet 771 sent successfully, RTT: 205.515687ms
+Packet 772 sent successfully, RTT: 833.922µs
+Packet 773 sent successfully, RTT: 829.221µs
+Retry 1: packet 776 (size: 99 bytes)
+Packet 774 sent successfully, RTT: 103.486949ms
+Retry 1: packet 777 (size: 99 bytes)
+Packet 775 sent successfully, RTT: 103.460946ms
+Retry 1: packet 778 (size: 99 bytes)
+Retry 2: packet 778 (size: 99 bytes)
+Packet 776 sent successfully, RTT: 205.444276ms
+Packet 777 sent successfully, RTT: 732.507µs
+Packet 778 sent successfully, RTT: 777.113µs
+Packet 779 sent successfully, RTT: 842.423µs
+Packet 780 sent successfully, RTT: 827.721µs
+Packet 781 sent successfully, RTT: 734.807µs
+Packet 782 sent successfully, RTT: 818.219µs
+Packet 783 sent successfully, RTT: 852.924µs
+Packet 784 sent successfully, RTT: 824.02µs
+Retry 1: packet 787 (size: 99 bytes)
+Retry 2: packet 787 (size: 99 bytes)
+Packet 785 sent successfully, RTT: 205.705515ms
+Packet 786 sent successfully, RTT: 747.309µs
+Packet 787 sent successfully, RTT: 742.007µs
+Packet 788 sent successfully, RTT: 727.806µs
+Packet 789 sent successfully, RTT: 639.793µs
+Packet 790 sent successfully, RTT: 722.505µs
+Packet 791 sent successfully, RTT: 698.901µs
+Packet 792 sent successfully, RTT: 705.803µs
+Packet 793 sent successfully, RTT: 764.812µs
+Packet 794 sent successfully, RTT: 806.917µs
+Packet 795 sent successfully, RTT: 730.006µs
+Packet 796 sent successfully, RTT: 721.305µs
+Packet 797 sent successfully, RTT: 814.819µs
+Packet 798 sent successfully, RTT: 730.407µs
+Packet 799 sent successfully, RTT: 710.003µs
+Packet 800 sent successfully, RTT: 735.407µs
+Packet 801 sent successfully, RTT: 729.206µs
+Packet 802 sent successfully, RTT: 638.593µs
+Packet 803 sent successfully, RTT: 772.013µs
+Packet 804 sent successfully, RTT: 826.32µs
+Packet 805 sent successfully, RTT: 725.805µs
+Packet 806 sent successfully, RTT: 824.02µs
+Packet 807 sent successfully, RTT: 800.516µs
+Packet 808 sent successfully, RTT: 749.209µs
+Packet 809 sent successfully, RTT: 780.513µs
+Packet 810 sent successfully, RTT: 722.505µs
+Retry 1: packet 813 (size: 99 bytes)
+Packet 811 sent successfully, RTT: 103.403738ms
+Packet 812 sent successfully, RTT: 876.727µs
+Packet 813 sent successfully, RTT: 745.009µs
+Packet 814 sent successfully, RTT: 722.406µs
+Retry 1: packet 817 (size: 99 bytes)
+Packet 815 sent successfully, RTT: 103.468746ms
+Packet 816 sent successfully, RTT: 831.621µs
+Packet 817 sent successfully, RTT: 827.62µs
+Packet 818 sent successfully, RTT: 856.624µs
+Packet 819 sent successfully, RTT: 852.424µs
+Packet 820 sent successfully, RTT: 821.219µs
+Retry 1: packet 823 (size: 99 bytes)
+Packet 821 sent successfully, RTT: 103.661975ms
+Packet 822 sent successfully, RTT: 826.42µs
+Packet 823 sent successfully, RTT: 852.924µs
+Packet 824 sent successfully, RTT: 892.93µs
+Packet 825 sent successfully, RTT: 838.222µs
+Retry 1: packet 828 (size: 99 bytes)
+Packet 826 sent successfully, RTT: 103.723483ms
+Packet 827 sent successfully, RTT: 884.928µs
+Packet 828 sent successfully, RTT: 830.521µs
+Packet 829 sent successfully, RTT: 840.222µs
+Retry 1: packet 832 (size: 99 bytes)
+Packet 830 sent successfully, RTT: 102.535711ms
+Retry 1: packet 833 (size: 99 bytes)
+Retry 2: packet 833 (size: 99 bytes)
+Retry 3: packet 833 (size: 99 bytes)
+Retry 4: packet 833 (size: 99 bytes)
+Packet 831 failed: max retries exceeded for packet 833
+Packet 832 sent successfully, RTT: 795.216µs
+Packet 833 sent successfully, RTT: 849.223µs
+Packet 834 sent successfully, RTT: 1.020648ms
+Packet 835 sent successfully, RTT: 842.122µs
+Packet 836 sent successfully, RTT: 783.414µs
+Packet 837 sent successfully, RTT: 869.326µs
+Packet 838 sent successfully, RTT: 813.719µs
+Packet 839 sent successfully, RTT: 813.118µs
+Packet 840 sent successfully, RTT: 804.917µs
+Packet 841 sent successfully, RTT: 737.007µs
+Packet 842 sent successfully, RTT: 723.605µs
+Packet 843 sent successfully, RTT: 813.118µs
+Packet 844 sent successfully, RTT: 812.118µs
+Packet 845 sent successfully, RTT: 809.218µs
+Packet 846 sent successfully, RTT: 785.814µs
+Packet 847 sent successfully, RTT: 818.419µs
+Packet 848 sent successfully, RTT: 807.817µs
+Packet 849 sent successfully, RTT: 821.619µs
+Packet 850 sent successfully, RTT: 714.104µs
+Packet 851 sent successfully, RTT: 824.82µs
+Packet 852 sent successfully, RTT: 829.22µs
+Packet 853 sent successfully, RTT: 827.72µs
+Retry 1: packet 856 (size: 99 bytes)
+Retry 2: packet 856 (size: 99 bytes)
+Retry 3: packet 856 (size: 99 bytes)
+Packet 854 sent successfully, RTT: 308.43445ms
+Packet 855 sent successfully, RTT: 954.423µs
+Retry 1: packet 858 (size: 99 bytes)
+Retry 2: packet 858 (size: 99 bytes)
+Packet 856 sent successfully, RTT: 205.529211ms
+Packet 857 sent successfully, RTT: 840.608µs
+Packet 858 sent successfully, RTT: 818.105µs
+Retry 1: packet 861 (size: 99 bytes)
+Packet 859 sent successfully, RTT: 103.484848ms
+Packet 860 sent successfully, RTT: 844.608µs
+Packet 861 sent successfully, RTT: 819.204µs
+Packet 862 sent successfully, RTT: 821.205µs
+Packet 863 sent successfully, RTT: 815.504µs
+Packet 864 sent successfully, RTT: 847.909µs
+Packet 865 sent successfully, RTT: 820.505µs
+Packet 866 sent successfully, RTT: 817.505µs
+Packet 867 sent successfully, RTT: 810.404µs
+Packet 868 sent successfully, RTT: 816.505µs
+Packet 869 sent successfully, RTT: 825.305µs
+Packet 870 sent successfully, RTT: 1.005928ms
+Packet 871 sent successfully, RTT: 820.405µs
+Packet 872 sent successfully, RTT: 834.406µs
+Packet 873 sent successfully, RTT: 821.305µs
+Packet 874 sent successfully, RTT: 835.807µs
+Packet 875 sent successfully, RTT: 812.904µs
+Packet 876 sent successfully, RTT: 819.905µs
+Packet 877 sent successfully, RTT: 818.505µs
+Packet 878 sent successfully, RTT: 821.005µs
+Packet 879 sent successfully, RTT: 838.008µs
+Packet 880 sent successfully, RTT: 791.802µs
+Packet 881 sent successfully, RTT: 964.123µs
+Retry 1: packet 884 (size: 99 bytes)
+Packet 882 sent successfully, RTT: 103.442742ms
+Packet 883 sent successfully, RTT: 896.815µs
+Packet 884 sent successfully, RTT: 825.706µs
+Packet 885 sent successfully, RTT: 818.305µs
+Packet 886 sent successfully, RTT: 808.504µs
+Packet 887 sent successfully, RTT: 814.804µs
+Packet 888 sent successfully, RTT: 814.905µs
+Retry 1: packet 891 (size: 99 bytes)
+Packet 889 sent successfully, RTT: 103.410038ms
+Packet 890 sent successfully, RTT: 737.794µs
+Packet 891 sent successfully, RTT: 678.487µs
+Packet 892 sent successfully, RTT: 740.295µs
+Packet 893 sent successfully, RTT: 707.09µs
+Packet 894 sent successfully, RTT: 832.407µs
+Retry 1: packet 897 (size: 99 bytes)
+Packet 895 sent successfully, RTT: 103.182109ms
+Packet 896 sent successfully, RTT: 682.988µs
+Packet 897 sent successfully, RTT: 721.592µs
+Retry 1: packet 900 (size: 99 bytes)
+Retry 2: packet 900 (size: 99 bytes)
+Retry 3: packet 900 (size: 99 bytes)
+Packet 898 sent successfully, RTT: 306.743968ms
+Retry 1: packet 901 (size: 99 bytes)
+Packet 899 sent successfully, RTT: 102.419411ms
+Retry 1: packet 902 (size: 99 bytes)
+Retry 2: packet 902 (size: 99 bytes)
+Packet 900 sent successfully, RTT: 204.851223ms
+Packet 901 sent successfully, RTT: 739.895µs
+Retry 1: packet 904 (size: 99 bytes)
+Packet 902 sent successfully, RTT: 103.329128ms
+Retry 1: packet 905 (size: 99 bytes)
+Retry 2: packet 905 (size: 99 bytes)
+Packet 903 sent successfully, RTT: 204.300953ms
+Packet 904 sent successfully, RTT: 770.899µs
+Packet 905 sent successfully, RTT: 824.806µs
+Packet 906 sent successfully, RTT: 691.388µs
+Packet 907 sent successfully, RTT: 840.808µs
+Packet 908 sent successfully, RTT: 804.103µs
+Packet 909 sent successfully, RTT: 919.418µs
+Packet 910 sent successfully, RTT: 864.01µs
+Retry 1: packet 913 (size: 99 bytes)
+Packet 911 sent successfully, RTT: 103.1205ms
+Packet 912 sent successfully, RTT: 827.106µs
+Packet 913 sent successfully, RTT: 834.107µs
+Packet 914 sent successfully, RTT: 748.596µs
+Retry 1: packet 917 (size: 99 bytes)
+Packet 915 sent successfully, RTT: 103.396336ms
+Packet 916 sent successfully, RTT: 1.106642ms
+Packet 917 sent successfully, RTT: 839.308µs
+Packet 918 sent successfully, RTT: 904.116µs
+Packet 919 sent successfully, RTT: 707.391µs
+Packet 920 sent successfully, RTT: 829.707µs
+Packet 921 sent successfully, RTT: 782µs
+Packet 922 sent successfully, RTT: 678.087µs
+Retry 1: packet 925 (size: 99 bytes)
+Packet 923 sent successfully, RTT: 102.620137ms
+Retry 1: packet 926 (size: 99 bytes)
+Packet 924 sent successfully, RTT: 103.57926ms
+Packet 925 sent successfully, RTT: 857.71µs
+Packet 926 sent successfully, RTT: 745.396µs
+Packet 927 sent successfully, RTT: 674.886µs
+Packet 928 sent successfully, RTT: 722.393µs
+Packet 929 sent successfully, RTT: 731.894µs
+Packet 930 sent successfully, RTT: 725.793µs
+Packet 931 sent successfully, RTT: 665.385µs
+Packet 932 sent successfully, RTT: 735.795µs
+Packet 933 sent successfully, RTT: 717.792µs
+Packet 934 sent successfully, RTT: 674.887µs
+Packet 935 sent successfully, RTT: 721.092µs
+Packet 936 sent successfully, RTT: 735.494µs
+Packet 937 sent successfully, RTT: 855.41µs
+Packet 938 sent successfully, RTT: 725.493µs
+Packet 939 sent successfully, RTT: 723.693µs
+Packet 940 sent successfully, RTT: 724.193µs
+Packet 941 sent successfully, RTT: 727.293µs
+Packet 942 sent successfully, RTT: 711.591µs
+Packet 943 sent successfully, RTT: 711.291µs
+Packet 944 sent successfully, RTT: 713.691µs
+Packet 945 sent successfully, RTT: 671.486µs
+Packet 946 sent successfully, RTT: 711.391µs
+Retry 1: packet 949 (size: 99 bytes)
+Packet 947 sent successfully, RTT: 103.321826ms
+Packet 948 sent successfully, RTT: 861.31µs
+Packet 949 sent successfully, RTT: 741.795µs
+Packet 950 sent successfully, RTT: 893.714µs
+Packet 951 sent successfully, RTT: 728.493µs
+Retry 1: packet 954 (size: 99 bytes)
+Retry 2: packet 954 (size: 99 bytes)
+Packet 952 sent successfully, RTT: 205.606221ms
+Packet 953 sent successfully, RTT: 836.107µs
+Packet 954 sent successfully, RTT: 846.308µs
+Packet 955 sent successfully, RTT: 732.594µs
+Packet 956 sent successfully, RTT: 674.686µs
+Packet 957 sent successfully, RTT: 930.219µs
+Packet 958 sent successfully, RTT: 834.706µs
+Packet 959 sent successfully, RTT: 868.211µs
+Packet 960 sent successfully, RTT: 764.598µs
+Packet 961 sent successfully, RTT: 801.902µs
+Packet 962 sent successfully, RTT: 818.904µs
+Retry 1: packet 965 (size: 99 bytes)
+Packet 963 sent successfully, RTT: 103.189109ms
+Retry 1: packet 966 (size: 99 bytes)
+Packet 964 sent successfully, RTT: 103.294323ms
+Packet 965 sent successfully, RTT: 865.811µs
+Packet 966 sent successfully, RTT: 821.105µs
+Packet 967 sent successfully, RTT: 820.505µs
+Packet 968 sent successfully, RTT: 753.397µs
+Packet 969 sent successfully, RTT: 816.904µs
+Retry 1: packet 972 (size: 99 bytes)
+Retry 2: packet 972 (size: 99 bytes)
+Retry 3: packet 972 (size: 99 bytes)
+Retry 4: packet 972 (size: 99 bytes)
+Packet 970 sent successfully, RTT: 409.444214ms
+Packet 971 sent successfully, RTT: 850.008µs
+Packet 972 sent successfully, RTT: 844.808µs
+Retry 1: packet 975 (size: 99 bytes)
+Packet 973 sent successfully, RTT: 103.560357ms
+Packet 974 sent successfully, RTT: 831.106µs
+Packet 975 sent successfully, RTT: 907.516µs
+Packet 976 sent successfully, RTT: 823.506µs
+Packet 977 sent successfully, RTT: 854.51µs
+Packet 978 sent successfully, RTT: 821.305µs
+Packet 979 sent successfully, RTT: 832.106µs
+Packet 980 sent successfully, RTT: 733.594µs
+Retry 1: packet 983 (size: 99 bytes)
+Packet 981 sent successfully, RTT: 103.540755ms
+Packet 982 sent successfully, RTT: 853.609µs
+Packet 983 sent successfully, RTT: 788.4µs
+Packet 984 sent successfully, RTT: 821.705µs
+Retry 1: packet 987 (size: 99 bytes)
+Packet 985 sent successfully, RTT: 103.322927ms
+Packet 986 sent successfully, RTT: 735.094µs
+Packet 987 sent successfully, RTT: 825.906µs
+Retry 1: packet 990 (size: 99 bytes)
+Packet 988 sent successfully, RTT: 102.538926ms
+Retry 1: packet 991 (size: 99 bytes)
+Packet 989 sent successfully, RTT: 103.34563ms
+Retry 1: packet 992 (size: 99 bytes)
+Packet 990 sent successfully, RTT: 103.592762ms
+Retry 1: packet 993 (size: 99 bytes)
+Packet 991 sent successfully, RTT: 102.436714ms
+Retry 1: packet 994 (size: 99 bytes)
+Packet 992 sent successfully, RTT: 103.284322ms
+Packet 993 sent successfully, RTT: 818.904µs
+Packet 994 sent successfully, RTT: 822.106µs
+Packet 995 sent successfully, RTT: 736.794µs
+Packet 996 sent successfully, RTT: 835.207µs
+Packet 997 sent successfully, RTT: 849.009µs
+Packet 998 sent successfully, RTT: 811.004µs
+Packet 999 sent successfully, RTT: 878.413µs
+
+Results:
+Packets sent: 1000
+Packets received: 999
+Initial drops: 242
+Final packet loss: 0.10%
+Bandwidth: 0.00336 MB/s
+Average RTT: 25.093759ms
+Total duration: 28.101899969s

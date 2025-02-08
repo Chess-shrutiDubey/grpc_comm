@@ -1,0 +1,15 @@
+Test Type,Metric,Unoptimized,Optimized,Difference (%)
+Bandwidth 1024B,MB/s,0.82,0.71,-13.41
+Bandwidth 10240B,MB/s,30.97,35.10,13.34
+Bandwidth 102400B,MB/s,87.71,109.46,24.80
+Bandwidth 1048576B,MB/s,199.44,149.62,-24.98
+Marshal int,Marshal Time (µs),10.218,11.436,11.92
+Marshal int,Unmarshal Time (µs),3.510,3.372,-3.93
+Marshal int,Marshal Time (µs),5.419,5.573,2.84
+Marshal int,Unmarshal Time (µs),1.276,1.265,-0.86
+Marshal int,Marshal Time (µs),2.951,4.345,47.24
+Marshal int,Unmarshal Time (µs),0.750,0.779,3.87
+RTT,First (µs),1104.974,878.018,-20.54
+RTT,Min (µs),134.130,132.622,-1.12
+RTT,Max (µs),1104.974,878.018,-20.54
+RTT,Avg (µs),198.295,195.026,-1.65

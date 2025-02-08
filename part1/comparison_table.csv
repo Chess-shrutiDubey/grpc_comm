@@ -1,0 +1,6 @@
+Operation,Measured Time (ns),Jeff Dean's Time (ns),Ratio (Measured/Jeff)
+Read 1MB sequentially from memory,171101.00,250000.00,0.68
+L1 cache reference,0.00,0.50,0.00
+Mutex lock/unlock,14.00,25.00,0.56
+Main memory reference,13.00,100.00,0.13
+Compress 1K bytes,245.00,3000.00,0.08

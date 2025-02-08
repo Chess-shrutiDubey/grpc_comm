@@ -1,0 +1,8 @@
+goos: linux
+goarch: amd64
+pkg: grpc_comm/part3/tests
+cpu: 13th Gen Intel(R) Core(TM) i7-13620H
+BenchmarkMarshal-16    	 1498018	       799.0 ns/op	     192 B/op	       5 allocs/op
+BenchmarkRTT-16        	    5391	    193858 ns/op	    5221 B/op	     103 allocs/op
+PASS
+ok  	grpc_comm/part3/tests	3.116s
