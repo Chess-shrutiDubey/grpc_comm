@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # Set project root directory for WSL
-PROJECT_ROOT="/home/shruti?SEM2/grpc_comm/grpc_comm/part3"
-RESULTS_DIR="${PROJECT_ROOT}/results"
+PROJECT_ROOT="/home/shruti/SEM2/grpc_comm/grpc_comm/part3"
+RESULTS_DIR="${PROJECT_ROOT}/results/non_vm_results"
 
 # Ensure we're in the project root
 cd "$PROJECT_ROOT" || {
@@ -38,9 +38,6 @@ run_client_tests() {
 
 # Function to run Go tests with different optimization levels
 run_go_tests() {
-    # Create results directory if it doesn't exist
-    mkdir -p "${RESULTS_DIR}"
-    
     echo "Running tests without optimization..."
     (cd "$PROJECT_ROOT" && go test -gcflags="-N -l" ./tests/... -v) > "${RESULTS_DIR}/unoptimized_results.txt"
 
@@ -81,9 +78,11 @@ fi
 
 # Check if results were generated
 echo -e "\n=== Testing Complete ==="
-echo "Results are available in:"
+echo "Results are available in: ${RESULTS_DIR}"
+
+# Verify test results
 for dir in rtt bandwidth marshal; do
-    if [ -d "${RESULTS_DIR}/${dir}" ]; then
+    if [ -d "${RESULTS_DIR}/${dir}" ] && [ "$(ls -A ${RESULTS_DIR}/${dir})" ]; then
         echo "- ${dir}/"
         ls -l "${RESULTS_DIR}/${dir}"
     else
@@ -91,6 +90,7 @@ for dir in rtt bandwidth marshal; do
     fi
 done
 
+# Verify Go test results
 for file in unoptimized_results.txt optimized_results.txt benchmark_results.txt; do
     if [ -f "${RESULTS_DIR}/${file}" ]; then
         echo "- ${file} present"
