@@ -42,9 +42,16 @@ run_client_tests() {
         echo "Testing with size: ${size} bytes"
         local output_file="${RESULTS_DIR}/${test_type}/size_${size}.txt"
         (cd "${PROJECT_ROOT}/cmd/client" && go run main.go \
-            --test="${test_type}" \  # Added missing --test flag
-            --size="${size}" \
-            --server="${REMOTE_VM_IP}:50051") > "${output_file}" 2>&1
+            -test="${test_type}" \
+            -size="${size}" \
+            -addr="${REMOTE_VM_IP}:50051") > "${output_file}" 2>&1
+        
+        # Add error checking
+        if [ $? -ne 0 ]; then
+            echo "Error running test with size ${size}"
+        else
+            echo "Completed test with size ${size}"
+        fi
     done
 }
 
