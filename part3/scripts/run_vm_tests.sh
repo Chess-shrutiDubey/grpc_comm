@@ -42,8 +42,8 @@ run_client_tests() {
         echo "Testing with size: ${size} bytes"
         local output_file="${RESULTS_DIR}/${test_type}/size_${size}.txt"
         (cd "${PROJECT_ROOT}/cmd/client" && go run main.go \
-            --test="$test_type" \
-            --size="$size" \
+            --test="${test_type}" \  # Added missing --test flag
+            --size="${size}" \
             --server="${REMOTE_VM_IP}:50051") > "${output_file}" 2>&1
     done
 }
@@ -101,12 +101,10 @@ run_go_tests
 # Stop remote server
 ssh nvn@${REMOTE_VM_IP} "pkill -f 'go run main.go'" || true
 
-# Collect results from both machines
-echo -e "\n=== Collecting Results ==="
+# Collect results from remote machine only
+echo -e "\n=== Collecting Remote Results ==="
 mkdir -p "${RESULTS_DIR}/remote"
-mkdir -p "${RESULTS_DIR}/local"
 scp -r nvn@${REMOTE_VM_IP}:"${PROJECT_ROOT}/results/*" "${RESULTS_DIR}/remote/"
-cp -r "${PROJECT_ROOT}/results/"* "${RESULTS_DIR}/local/"
 
 # Display results
 echo -e "\n=== Testing Complete ==="
