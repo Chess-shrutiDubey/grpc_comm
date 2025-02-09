@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Configuration
-REMOTE_VM_IP="10.2.0.15"  # Change this to your server VM's IP
+REMOTE_VM_IP="10.0.2.15"  # Change this to your server VM's IP
 
 # Get base directory path
 BASE_DIR=$(cd "$(dirname "$0")/.." && pwd)
