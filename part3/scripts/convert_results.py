@@ -20,7 +20,7 @@ def process_performance_results(root_dir):
         'marshal': []
     }
     
-    # Process each test type with detailed debugging
+    # Processings each test type with detailed debugging
     for test_type in ['rtt', 'bandwidth', 'marshal']:
         json_dir = os.path.join(root_dir, 'results', test_type)
         if os.path.exists(json_dir):

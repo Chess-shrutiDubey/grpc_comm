@@ -1,0 +1,134 @@
+#!/bin/bash
+
+# Configuration
+REMOTE_VM_IP="10.2.0.15"  # Change this to your server VM's IP
+
+# Get base directory path
+BASE_DIR=$(cd "$(dirname "$0")/.." && pwd)
+PROJECT_ROOT="${BASE_DIR}"
+
+# Create results directory with timestamp
+TIMESTAMP=$(date +%Y%m%d_%H%M%S)
+RESULTS_DIR="${PROJECT_ROOT}/results/vm_tests_${TIMESTAMP}"
+
+# Ensure directories exist on both machines
+setup_directories() {
+    echo "Setting up directories..."
+    # Local setup
+    mkdir -p "${RESULTS_DIR}"/{rtt,bandwidth,marshal}
+    mkdir -p "${PROJECT_ROOT}/bin"
+    
+    # Remote setup
+    ssh nvn@${REMOTE_VM_IP} "mkdir -p ${PROJECT_ROOT}/results/{rtt,bandwidth,marshal}"
+    ssh nvn@${REMOTE_VM_IP} "mkdir -p ${PROJECT_ROOT}/bin"
+}
+
+# Function to check remote connectivity
+check_remote() {
+    echo "Checking connection to remote VM..."
+    ping -c 1 ${REMOTE_VM_IP} >/dev/null 2>&1 || {
+        echo "Error: Cannot reach server VM at ${REMOTE_VM_IP}"
+        exit 1
+    }
+}
+
+# Function to run client tests
+run_client_tests() {
+    local test_type=$1
+    local sizes=("1024" "10240" "102400" "1048576")
+    
+    echo "Running $test_type tests..."
+    for size in "${sizes[@]}"; do
+        echo "Testing with size: ${size} bytes"
+        local output_file="${RESULTS_DIR}/${test_type}/size_${size}.txt"
+        (cd "${PROJECT_ROOT}/cmd/client" && go run main.go \
+            --test="$test_type" \
+            --size="$size" \
+            --server="${REMOTE_VM_IP}:50051") > "${output_file}" 2>&1
+    done
+}
+
+# Function to run Go tests with different optimization levels
+run_go_tests() {
+    echo "Running tests without optimization..."
+    (cd "$PROJECT_ROOT" && go test -gcflags="-N -l" ./tests/... -v) > "${RESULTS_DIR}/unoptimized_results.txt"
+
+    echo "Running tests with optimization..."
+    (cd "$PROJECT_ROOT" && go test ./tests/... -v) > "${RESULTS_DIR}/optimized_results.txt"
+
+    echo "Running benchmarks..."
+    (cd "$PROJECT_ROOT" && go test -bench=. ./tests/... -benchmem) > "${RESULTS_DIR}/benchmark_results.txt"
+}
+
+# Start server on remote VM
+start_remote_server() {
+    echo "Starting gRPC server on remote VM..."
+    ssh nvn@${REMOTE_VM_IP} "cd ${PROJECT_ROOT}/cmd/server && go run main.go" &
+    SERVER_PID=$!
+    sleep 5  # Wait longer for remote server to start
+}
+
+# Main execution
+echo "Working directory: ${PROJECT_ROOT}"
+check_remote
+setup_directories
+
+# Build binaries on both machines
+echo "Building on local machine..."
+(cd "$PROJECT_ROOT" && go build -o bin/client ./cmd/client)
+
+echo "Building on remote machine..."
+ssh nvn@${REMOTE_VM_IP} "cd ${PROJECT_ROOT} && go build -o bin/server ./cmd/server"
+
+# Start remote server
+start_remote_server
+
+# Run all tests
+echo "=== Starting Performance Tests ==="
+
+echo -e "\n1. RTT Tests"
+run_client_tests "rtt"
+
+echo -e "\n2. Bandwidth Tests"
+run_client_tests "bandwidth"
+
+echo -e "\n3. Marshal Tests"
+run_client_tests "marshal"
+
+echo -e "\n4. Go Tests and Benchmarks"
+run_go_tests
+
+# Stop remote server
+ssh nvn@${REMOTE_VM_IP} "pkill -f 'go run main.go'" || true
+
+# Collect results from both machines
+echo -e "\n=== Collecting Results ==="
+mkdir -p "${RESULTS_DIR}/remote"
+mkdir -p "${RESULTS_DIR}/local"
+scp -r nvn@${REMOTE_VM_IP}:"${PROJECT_ROOT}/results/*" "${RESULTS_DIR}/remote/"
+cp -r "${PROJECT_ROOT}/results/"* "${RESULTS_DIR}/local/"
+
+# Display results
+echo -e "\n=== Testing Complete ==="
+echo "Results are available in: ${RESULTS_DIR}"
+ls -R "${RESULTS_DIR}"
+
+# Verify results
+for dir in rtt bandwidth marshal; do
+    if [ -d "${RESULTS_DIR}/${dir}" ]; then
+        echo "- ${dir} test results:"
+        ls -l "${RESULTS_DIR}/${dir}"
+    else
+        echo "Warning: No results in ${dir}/"
+    fi
+done
+
+for file in unoptimized_results.txt optimized_results.txt benchmark_results.txt; do
+    if [ -f "${RESULTS_DIR}/${file}" ]; then
+        echo "- ${file} present"
+    else
+        echo "Warning: ${file} not generated"
+    fi
+done
+
+echo "Test run completed at $(date)"

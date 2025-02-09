@@ -45,6 +45,6 @@ if [ -f "pkg/generated/performance.pb.go" ] && [ -f "pkg/generated/performance_g
     echo "  - pkg/generated/performance.pb.go"
     echo "  - pkg/generated/performance_grpc.pb.go"
 else
-    echo "❌ Error: Failed to generate protobuf files"
+    echo "Error: Failed to generate protobuf files"
     exit 1
 fi
