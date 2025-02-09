@@ -1,0 +1,2 @@
+2025/02/09 14:23:04 Bandwidth results saved to: /home/nvn/grpc_comm/part3/results/bandwidth/bandwidth_1024KB_20250209_142304.json
+2025/02/09 14:23:04 Bandwidth Results saved. Run 'python3 scripts/analyze.py' to analyze.

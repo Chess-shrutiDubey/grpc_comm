@@ -1,3 +1,0 @@
-2025/02/09 13:37:03 Marshal results saved to: /home/nvn/grpc_comm/part3/results/marshal/marshal_1KB_20250209_133703.json
-2025/02/09 13:37:03 Marshal Results saved. Run 'python3 scripts/analyze.py' to analyze.
-./run_vm_tests.sh: line 47: --size=10240: command not found
