@@ -1,7 +1,8 @@
 #!/bin/bash
 
 # Set project root directory for WSL
-PROJECT_ROOT="/home/shruti/SEM2/grpc_comm/grpc_comm/part3"
+PROJECT_ROOT="/home/shruti?SEM2/grpc_comm/grpc_comm/part3"
+RESULTS_DIR="${PROJECT_ROOT}/results"
 
 # Ensure we're in the project root
 cd "$PROJECT_ROOT" || {
@@ -10,7 +11,7 @@ cd "$PROJECT_ROOT" || {
 }
 
 # Create results directories
-mkdir -p results/{rtt,bandwidth,marshal}
+mkdir -p "${RESULTS_DIR}"/{rtt,bandwidth,marshal}
 
 # Function to run client tests
 run_client_tests() {
@@ -20,26 +21,34 @@ run_client_tests() {
     echo "Running $test_type tests..."
     for size in "${sizes[@]}"; do
         echo "Testing with size: ${size} bytes"
-        local output_file="${PROJECT_ROOT}/results/${test_type}/size_${size}.txt"
+        local output_file="${RESULTS_DIR}/${test_type}/size_${size}.txt"
         (cd "${PROJECT_ROOT}/cmd/client" && go run main.go \
-            --test="$test_type" \
-            --size="$size") > "${output_file}" 2>&1
+            -test="${test_type}" \
+            -size="${size}" \
+            -addr="localhost:50051") > "${output_file}" 2>&1
+        
+        # Add error checking
+        if [ $? -ne 0 ]; then
+            echo "Error running test with size ${size}"
+        else
+            echo "Completed test with size ${size}"
+        fi
     done
 }
 
 # Function to run Go tests with different optimization levels
 run_go_tests() {
     # Create results directory if it doesn't exist
-    mkdir -p "${PROJECT_ROOT}/results"
+    mkdir -p "${RESULTS_DIR}"
     
     echo "Running tests without optimization..."
-    (cd "$PROJECT_ROOT" && go test -gcflags="-N -l" ./tests/... -v) > "${PROJECT_ROOT}/results/unoptimized_results.txt"
+    (cd "$PROJECT_ROOT" && go test -gcflags="-N -l" ./tests/... -v) > "${RESULTS_DIR}/unoptimized_results.txt"
 
     echo "Running tests with optimization..."
-    (cd "$PROJECT_ROOT" && go test ./tests/... -v) > "${PROJECT_ROOT}/results/optimized_results.txt"
+    (cd "$PROJECT_ROOT" && go test ./tests/... -v) > "${RESULTS_DIR}/optimized_results.txt"
 
     echo "Running benchmarks..."
-    (cd "$PROJECT_ROOT" && go test -bench=. ./tests/... -benchmem) > "${PROJECT_ROOT}/results/benchmark_results.txt"
+    (cd "$PROJECT_ROOT" && go test -bench=. ./tests/... -benchmem) > "${RESULTS_DIR}/benchmark_results.txt"
 }
 
 # Start server if not running
@@ -74,18 +83,20 @@ fi
 echo -e "\n=== Testing Complete ==="
 echo "Results are available in:"
 for dir in rtt bandwidth marshal; do
-    if [ -d "${PROJECT_ROOT}/results/${dir}" ]; then
-        echo "- results/${dir}/"
-        ls -l "${PROJECT_ROOT}/results/${dir}"
+    if [ -d "${RESULTS_DIR}/${dir}" ]; then
+        echo "- ${dir}/"
+        ls -l "${RESULTS_DIR}/${dir}"
     else
-        echo "Warning: No results in results/${dir}/"
+        echo "Warning: No results in ${dir}/"
     fi
 done
 
 for file in unoptimized_results.txt optimized_results.txt benchmark_results.txt; do
-    if [ -f "${PROJECT_ROOT}/results/${file}" ]; then
-        echo "- results/${file}"
+    if [ -f "${RESULTS_DIR}/${file}" ]; then
+        echo "- ${file} present"
     else
         echo "Warning: ${file} not generated"
     fi
 done
+
+echo "Test run completed at $(date)"
