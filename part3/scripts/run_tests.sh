@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Set project root directory for WSL
-PROJECT_ROOT="/home/naveen/shruti/grpc_comm/part3"
+PROJECT_ROOT="/home/shruti/SEM2/grpc_comm/grpc_comm/part3"
 
 # Ensure we're in the project root
 cd "$PROJECT_ROOT" || {
