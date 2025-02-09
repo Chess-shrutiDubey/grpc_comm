@@ -1,0 +1,2 @@
+2025/02/09 20:26:51 Marshal results saved to: /home/shruti/SEM2/grpc_commmmm/proj/grpc_comm/part3/results/non_vm_results/marshal_json/marshal_10KB_20250209_202651.json
+2025/02/09 20:26:51 Marshal Results saved. Run 'python3 scripts/analyze.py' to analyze.

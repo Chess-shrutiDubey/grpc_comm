@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Set project root directory for WSL
-PROJECT_ROOT="/home/shruti/SEM2/grpc_comm/grpc_comm/part3"
+PROJECT_ROOT="/home/shruti/SEM2/grpc_commmmm/proj/grpc_comm/part3"
 RESULTS_DIR="${PROJECT_ROOT}/results/non_vm_results"
 
 # Ensure we're in the project root

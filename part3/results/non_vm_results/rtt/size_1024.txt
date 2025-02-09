@@ -1,0 +1,2 @@
+2025/02/09 20:26:43 RTT results saved to: /home/shruti/SEM2/grpc_commmmm/proj/grpc_comm/part3/results/non_vm_results/rtt_json/rtt_1KB_20250209_202643.json
+2025/02/09 20:26:43 RTT Results saved. Run 'python3 scripts/analyze.py' to analyze.

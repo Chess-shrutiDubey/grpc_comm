@@ -20,9 +20,9 @@ var (
 
 func saveRTTResults(rtts []time.Duration, msgSize int) error {
 	result := struct {
-		MessageSize int      json:"message_size"
-		RTTs        []string json:"rtts"
-		Timestamp   string   json:"timestamp"
+		MessageSize int      `json:"message_size"`
+		RTTs        []string `json:"rtts"`
+		Timestamp   string   `json:"timestamp"`
 	}{
 		MessageSize: msgSize,
 		RTTs:        make([]string, len(rtts)),
@@ -60,9 +60,9 @@ func saveRTTResults(rtts []time.Duration, msgSize int) error {
 
 func saveBandwidthResults(bandwidth float64, msgSize int) error {
 	result := struct {
-		MessageSize   int     json:"message_size"
-		BandwidthMBps float64 json:"bandwidth_mbps"
-		Timestamp     string  json:"timestamp"
+		MessageSize   int     `json:"message_size"`
+		BandwidthMBps float64 `json:"bandwidth_mbps"`
+		Timestamp     string  `json:"timestamp"`
 	}{
 		MessageSize:   msgSize,
 		BandwidthMBps: bandwidth,
@@ -95,11 +95,11 @@ func saveBandwidthResults(bandwidth float64, msgSize int) error {
 
 func saveMarshalResults(duration time.Duration, msgSize int) error {
 	result := struct {
-		MessageSize   int    json:"message_size"
-		MarshalTime   string json:"marshal_time"
-		MarshalTimeNs int64  json:"marshal_time_ns"
-		DataType      string json:"data_type"
-		Timestamp     string json:"timestamp"
+		MessageSize   int    `json:"message_size"`
+		MarshalTime   string `json:"marshal_time"`
+		MarshalTimeNs int64  `json:"marshal_time_ns"`
+		DataType      string `json:"data_type"`
+		Timestamp     string `json:"timestamp"`
 	}{
 		MessageSize:   msgSize,
 		MarshalTime:   duration.String(),

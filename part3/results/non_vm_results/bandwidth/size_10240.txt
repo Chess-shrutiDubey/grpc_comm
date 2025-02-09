@@ -1,0 +1,2 @@
+2025/02/09 20:26:46 Bandwidth results saved to: /home/shruti/SEM2/grpc_commmmm/proj/grpc_comm/part3/results/non_vm_results/bandwidth_json/bandwidth_10KB_20250209_202646.json
+2025/02/09 20:26:46 Bandwidth Results saved. Run 'python3 scripts/analyze.py' to analyze.

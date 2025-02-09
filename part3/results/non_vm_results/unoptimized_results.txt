@@ -1,0 +1,34 @@
+=== RUN   TestBandwidth
+=== RUN   TestBandwidth/size_1024
+    bandwidth_test.go:43: Size: 1024 bytes, Bandwidth: 0.63 MB/s
+=== RUN   TestBandwidth/size_10240
+    bandwidth_test.go:43: Size: 10240 bytes, Bandwidth: 18.35 MB/s
+=== RUN   TestBandwidth/size_102400
+    bandwidth_test.go:43: Size: 102400 bytes, Bandwidth: 69.24 MB/s
+=== RUN   TestBandwidth/size_1048576
+    bandwidth_test.go:43: Size: 1048576 bytes, Bandwidth: 111.55 MB/s
+--- PASS: TestBandwidth (0.01s)
+    --- PASS: TestBandwidth/size_1024 (0.00s)
+    --- PASS: TestBandwidth/size_10240 (0.00s)
+    --- PASS: TestBandwidth/size_102400 (0.00s)
+    --- PASS: TestBandwidth/size_1048576 (0.01s)
+=== RUN   TestMarshalOverhead
+=== RUN   TestMarshalOverhead/int
+    marshal_test.go:36: Result: {DataType:int Size:14 MarshalTime:10.429µs UnmarshalTime:3.537µs MessageSize:14 Error:}
+=== RUN   TestMarshalOverhead/string
+    marshal_test.go:36: Result: {DataType:int Size:14 MarshalTime:4.348µs UnmarshalTime:1.212µs MessageSize:14 Error:}
+=== RUN   TestMarshalOverhead/complex
+    marshal_test.go:36: Result: {DataType:int Size:14 MarshalTime:2.669µs UnmarshalTime:882ns MessageSize:14 Error:}
+--- PASS: TestMarshalOverhead (0.00s)
+    --- PASS: TestMarshalOverhead/int (0.00s)
+    --- PASS: TestMarshalOverhead/string (0.00s)
+    --- PASS: TestMarshalOverhead/complex (0.00s)
+=== RUN   TestRTT
+    rtt_test.go:73: RTT Statistics over 100 iterations:
+    rtt_test.go:74:   First RTT: 1.291138ms
+    rtt_test.go:75:   Min RTT: 139.36µs
+    rtt_test.go:76:   Max RTT: 1.291138ms
+    rtt_test.go:77:   Avg RTT: 195.535µs
+--- PASS: TestRTT (0.02s)
+PASS
+ok  	grpc_comm/part3/tests	(cached)
