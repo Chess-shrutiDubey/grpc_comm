@@ -6,16 +6,13 @@ REMOTE_VM_IP="10.0.2.15"  # Change this to your server VM's IP
 # Get base directory path
 BASE_DIR=$(cd "$(dirname "$0")/.." && pwd)
 PROJECT_ROOT="${BASE_DIR}"
-
-# Create results directory with timestamp
-TIMESTAMP=$(date +%Y%m%d_%H%M%S)
-RESULTS_DIR="${PROJECT_ROOT}/results/vm_tests_${TIMESTAMP}"
+RESULTS_DIR="${PROJECT_ROOT}/results/vm_results"
 
 # Ensure directories exist on both machines
 setup_directories() {
     echo "Setting up directories..."
     # Local setup
-    mkdir -p "${RESULTS_DIR}"/{rtt,bandwidth,marshal}
+    mkdir -p "${RESULTS_DIR}"/{local,remote}/{rtt,bandwidth,marshal}
     mkdir -p "${PROJECT_ROOT}/bin"
     
     # Remote setup
@@ -40,7 +37,7 @@ run_client_tests() {
     echo "Running $test_type tests..."
     for size in "${sizes[@]}"; do
         echo "Testing with size: ${size} bytes"
-        local output_file="${RESULTS_DIR}/${test_type}/size_${size}.txt"
+        local output_file="${RESULTS_DIR}/local/${test_type}/size_${size}.txt"
         (cd "${PROJECT_ROOT}/cmd/client" && go run main.go \
             -test="${test_type}" \
             -size="${size}" \
@@ -58,13 +55,13 @@ run_client_tests() {
 # Function to run Go tests with different optimization levels
 run_go_tests() {
     echo "Running tests without optimization..."
-    (cd "$PROJECT_ROOT" && go test -gcflags="-N -l" ./tests/... -v) > "${RESULTS_DIR}/unoptimized_results.txt"
+    (cd "$PROJECT_ROOT" && go test -gcflags="-N -l" ./tests/... -v) > "${RESULTS_DIR}/local/unoptimized_results.txt"
 
     echo "Running tests with optimization..."
-    (cd "$PROJECT_ROOT" && go test ./tests/... -v) > "${RESULTS_DIR}/optimized_results.txt"
+    (cd "$PROJECT_ROOT" && go test ./tests/... -v) > "${RESULTS_DIR}/local/optimized_results.txt"
 
     echo "Running benchmarks..."
-    (cd "$PROJECT_ROOT" && go test -bench=. ./tests/... -benchmem) > "${RESULTS_DIR}/benchmark_results.txt"
+    (cd "$PROJECT_ROOT" && go test -bench=. ./tests/... -benchmem) > "${RESULTS_DIR}/local/benchmark_results.txt"
 }
 
 # Start server on remote VM
@@ -108,31 +105,44 @@ run_go_tests
 # Stop remote server
 ssh nvn@${REMOTE_VM_IP} "pkill -f 'go run main.go'" || true
 
-# Collect results from remote machine only
+# Collect results from remote machine
 echo -e "\n=== Collecting Remote Results ==="
-mkdir -p "${RESULTS_DIR}/remote"
-scp -r nvn@${REMOTE_VM_IP}:"${PROJECT_ROOT}/results/*" "${RESULTS_DIR}/remote/"
+for dir in rtt bandwidth marshal; do
+    scp -r nvn@${REMOTE_VM_IP}:"${PROJECT_ROOT}/results/${dir}/*" "${RESULTS_DIR}/remote/${dir}/" 2>/dev/null || true
+done
 
 # Display results
 echo -e "\n=== Testing Complete ==="
 echo "Results are available in: ${RESULTS_DIR}"
-ls -R "${RESULTS_DIR}"
 
-# Verify results
+# Verify local results
+echo -e "\nLocal Results:"
 for dir in rtt bandwidth marshal; do
-    if [ -d "${RESULTS_DIR}/${dir}" ]; then
-        echo "- ${dir} test results:"
-        ls -l "${RESULTS_DIR}/${dir}"
+    if [ -d "${RESULTS_DIR}/local/${dir}" ] && [ "$(ls -A ${RESULTS_DIR}/local/${dir})" ]; then
+        echo "- local/${dir}:"
+        ls -l "${RESULTS_DIR}/local/${dir}"
     else
-        echo "Warning: No results in ${dir}/"
+        echo "Warning: No results in local/${dir}/"
     fi
 done
 
-for file in unoptimized_results.txt optimized_results.txt benchmark_results.txt; do
-    if [ -f "${RESULTS_DIR}/${file}" ]; then
-        echo "- ${file} present"
+# Verify remote results
+echo -e "\nRemote Results:"
+for dir in rtt bandwidth marshal; do
+    if [ -d "${RESULTS_DIR}/remote/${dir}" ] && [ "$(ls -A ${RESULTS_DIR}/remote/${dir})" ]; then
+        echo "- remote/${dir}:"
+        ls -l "${RESULTS_DIR}/remote/${dir}"
     else
-        echo "Warning: ${file} not generated"
+        echo "Warning: No results in remote/${dir}/"
+    fi
+done
+
+# Check Go test results
+for file in unoptimized_results.txt optimized_results.txt benchmark_results.txt; do
+    if [ -f "${RESULTS_DIR}/local/${file}" ]; then
+        echo "- ${file} present in local results"
+    else
+        echo "Warning: ${file} not generated in local results"
     fi
 done
 
