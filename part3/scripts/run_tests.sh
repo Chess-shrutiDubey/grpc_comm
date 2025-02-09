@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Set project root directory for WSL
-PROJECT_ROOT="/home/shruti/SEM2/grpc_comm/grpc_comm/part3"
+PROJECT_ROOT="/home/naveen/shruti/grpc_comm/part3"
 
 # Ensure we're in the project root
 cd "$PROJECT_ROOT" || {
@@ -20,7 +20,10 @@ run_client_tests() {
     echo "Running $test_type tests..."
     for size in "${sizes[@]}"; do
         echo "Testing with size: ${size} bytes"
-        (cd "${PROJECT_ROOT}/cmd/client" && go run main.go --test="$test_type" --size="$size")
+        local output_file="${PROJECT_ROOT}/results/${test_type}/size_${size}.txt"
+        (cd "${PROJECT_ROOT}/cmd/client" && go run main.go \
+            --test="$test_type" \
+            --size="$size") > "${output_file}" 2>&1
     done
 }
 
